@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "IdentificarAno/1.0.0": {
+        "runtime": {
+          "IdentificarAno.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "IdentificarAno/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
