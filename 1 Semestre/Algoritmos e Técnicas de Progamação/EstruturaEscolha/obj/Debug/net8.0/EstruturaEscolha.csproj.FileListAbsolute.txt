@@ -1,0 +1,15 @@
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\EstruturaEscolha\obj\Debug\net8.0\EstruturaEscolha.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\EstruturaEscolha\obj\Debug\net8.0\EstruturaEscolha.AssemblyInfoInputs.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\EstruturaEscolha\obj\Debug\net8.0\EstruturaEscolha.AssemblyInfo.cs
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\EstruturaEscolha\obj\Debug\net8.0\EstruturaEscolha.csproj.CoreCompileInputs.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\EstruturaEscolha\obj\Debug\net8.0\EstruturaEscolha.sourcelink.json
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\EstruturaEscolha\bin\Debug\net8.0\EstruturaEscolha.exe
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\EstruturaEscolha\bin\Debug\net8.0\EstruturaEscolha.deps.json
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\EstruturaEscolha\bin\Debug\net8.0\EstruturaEscolha.runtimeconfig.json
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\EstruturaEscolha\bin\Debug\net8.0\EstruturaEscolha.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\EstruturaEscolha\bin\Debug\net8.0\EstruturaEscolha.pdb
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\EstruturaEscolha\obj\Debug\net8.0\EstruturaEscolha.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\EstruturaEscolha\obj\Debug\net8.0\refint\EstruturaEscolha.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\EstruturaEscolha\obj\Debug\net8.0\EstruturaEscolha.pdb
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\EstruturaEscolha\obj\Debug\net8.0\EstruturaEscolha.genruntimeconfig.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\EstruturaEscolha\obj\Debug\net8.0\ref\EstruturaEscolha.dll

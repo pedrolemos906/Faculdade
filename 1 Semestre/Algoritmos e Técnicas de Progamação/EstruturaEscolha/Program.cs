@@ -5,14 +5,19 @@ class Program{
     {
         double A, B, MAIOR;
 
-        Console.write("digite o 1º valor: ");
+        Console.Write("digite o 1º valor: ");
         A = double.Parse(Console.ReadLine());
 
-        Console.write("digite o 1º valor: ");
-        B = double.arse(Console.ReadLine());
+        Console.Write("digite o 1º valor: ");
+        B = double.Parse(Console.ReadLine());
 
-        if (A > B);
-            MAIOR = A;
+        if (A > B) MAIOR = A;
 
         else
+        {
             MAIOR = B;
+        }
+
+        Console.Write("O maior número é o " + MAIOR);
+    }
+}

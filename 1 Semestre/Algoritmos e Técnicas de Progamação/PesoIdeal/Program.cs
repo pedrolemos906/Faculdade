@@ -5,16 +5,22 @@ class Program
     {
         Console.WriteLine("Calculadora do peso ideal!");
 
-        char sexo;
-        Console.Write("Sexo [m/f]: ");
-        sexo = char.Parse(Console.ReadLine());
+        Console.WriteLine("Informe o sexo do usuário [M/F]: ");
+        char sexo = char.ToUpper(Console.ReadKey().KeyChar);
 
-        double altura;
-        Console.Write("Digite a altura: ");
-        altura = double.Parse(Console.ReadLine());
+        
+        Console.WriteLine("informe a altura do usuário [X,XX]: ");
+        double altura = double.Parse(Console.ReadLine());
 
-        double PesoIdeal;
-        if ()
+        double pesoideal = 0;
+
+        if (sexo == 'M') pesoideal = (72.7 * altura) - 58;
+
+        else if (sexo == 'F') pesoideal = (62.1 * altura) - 44.7;
+
+            else Console.WriteLine("Sexo inválido. Use apenas M ou F.");
+
+        Console.WriteLine($"O peso ideal é : {pesoideal:F2} kg");
 
     }
 }
