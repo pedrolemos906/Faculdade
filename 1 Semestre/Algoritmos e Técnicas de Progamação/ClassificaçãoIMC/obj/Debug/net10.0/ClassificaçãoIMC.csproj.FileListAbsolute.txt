@@ -1,0 +1,15 @@
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoIMC\bin\Debug\net10.0\ClassificaçãoIMC.exe
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoIMC\bin\Debug\net10.0\ClassificaçãoIMC.deps.json
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoIMC\bin\Debug\net10.0\ClassificaçãoIMC.runtimeconfig.json
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoIMC\bin\Debug\net10.0\ClassificaçãoIMC.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoIMC\bin\Debug\net10.0\ClassificaçãoIMC.pdb
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoIMC\obj\Debug\net10.0\ClassificaçãoIMC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoIMC\obj\Debug\net10.0\ClassificaçãoIMC.AssemblyInfoInputs.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoIMC\obj\Debug\net10.0\ClassificaçãoIMC.AssemblyInfo.cs
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoIMC\obj\Debug\net10.0\ClassificaçãoIMC.csproj.CoreCompileInputs.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoIMC\obj\Debug\net10.0\ClassificaçãoIMC.sourcelink.json
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoIMC\obj\Debug\net10.0\ClassificaçãoIMC.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoIMC\obj\Debug\net10.0\refint\ClassificaçãoIMC.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoIMC\obj\Debug\net10.0\ClassificaçãoIMC.pdb
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoIMC\obj\Debug\net10.0\ClassificaçãoIMC.genruntimeconfig.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoIMC\obj\Debug\net10.0\ref\ClassificaçãoIMC.dll

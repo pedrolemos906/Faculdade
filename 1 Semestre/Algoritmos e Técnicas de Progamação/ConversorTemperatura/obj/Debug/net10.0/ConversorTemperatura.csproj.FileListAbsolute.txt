@@ -1,0 +1,15 @@
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ConversorTemperatura\bin\Debug\net10.0\ConversorTemperatura.exe
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ConversorTemperatura\bin\Debug\net10.0\ConversorTemperatura.deps.json
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ConversorTemperatura\bin\Debug\net10.0\ConversorTemperatura.runtimeconfig.json
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ConversorTemperatura\bin\Debug\net10.0\ConversorTemperatura.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ConversorTemperatura\bin\Debug\net10.0\ConversorTemperatura.pdb
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ConversorTemperatura\obj\Debug\net10.0\ConversorTemperatura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ConversorTemperatura\obj\Debug\net10.0\ConversorTemperatura.AssemblyInfoInputs.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ConversorTemperatura\obj\Debug\net10.0\ConversorTemperatura.AssemblyInfo.cs
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ConversorTemperatura\obj\Debug\net10.0\ConversorTemperatura.csproj.CoreCompileInputs.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ConversorTemperatura\obj\Debug\net10.0\ConversorTemperatura.sourcelink.json
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ConversorTemperatura\obj\Debug\net10.0\ConversorTemperatura.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ConversorTemperatura\obj\Debug\net10.0\refint\ConversorTemperatura.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ConversorTemperatura\obj\Debug\net10.0\ConversorTemperatura.pdb
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ConversorTemperatura\obj\Debug\net10.0\ConversorTemperatura.genruntimeconfig.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ConversorTemperatura\obj\Debug\net10.0\ref\ConversorTemperatura.dll

@@ -1,0 +1,15 @@
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\QualMaior3Numeros\bin\Debug\net10.0\QualMaior3Numeros.exe
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\QualMaior3Numeros\bin\Debug\net10.0\QualMaior3Numeros.deps.json
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\QualMaior3Numeros\bin\Debug\net10.0\QualMaior3Numeros.runtimeconfig.json
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\QualMaior3Numeros\bin\Debug\net10.0\QualMaior3Numeros.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\QualMaior3Numeros\bin\Debug\net10.0\QualMaior3Numeros.pdb
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\QualMaior3Numeros\obj\Debug\net10.0\QualMaior3Numeros.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\QualMaior3Numeros\obj\Debug\net10.0\QualMaior3Numeros.AssemblyInfoInputs.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\QualMaior3Numeros\obj\Debug\net10.0\QualMaior3Numeros.AssemblyInfo.cs
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\QualMaior3Numeros\obj\Debug\net10.0\QualMaior3Numeros.csproj.CoreCompileInputs.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\QualMaior3Numeros\obj\Debug\net10.0\QualMaior3Numeros.sourcelink.json
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\QualMaior3Numeros\obj\Debug\net10.0\QualMaior3Numeros.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\QualMaior3Numeros\obj\Debug\net10.0\refint\QualMaior3Numeros.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\QualMaior3Numeros\obj\Debug\net10.0\QualMaior3Numeros.pdb
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\QualMaior3Numeros\obj\Debug\net10.0\QualMaior3Numeros.genruntimeconfig.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\QualMaior3Numeros\obj\Debug\net10.0\ref\QualMaior3Numeros.dll

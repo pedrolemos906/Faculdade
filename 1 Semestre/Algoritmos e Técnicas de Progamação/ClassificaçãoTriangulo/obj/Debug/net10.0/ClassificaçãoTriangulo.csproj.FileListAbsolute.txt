@@ -1,0 +1,15 @@
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoTriangulo\bin\Debug\net10.0\ClassificaçãoTriangulo.exe
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoTriangulo\bin\Debug\net10.0\ClassificaçãoTriangulo.deps.json
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoTriangulo\bin\Debug\net10.0\ClassificaçãoTriangulo.runtimeconfig.json
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoTriangulo\bin\Debug\net10.0\ClassificaçãoTriangulo.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoTriangulo\bin\Debug\net10.0\ClassificaçãoTriangulo.pdb
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoTriangulo\obj\Debug\net10.0\ClassificaçãoTriangulo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoTriangulo\obj\Debug\net10.0\ClassificaçãoTriangulo.AssemblyInfoInputs.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoTriangulo\obj\Debug\net10.0\ClassificaçãoTriangulo.AssemblyInfo.cs
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoTriangulo\obj\Debug\net10.0\ClassificaçãoTriangulo.csproj.CoreCompileInputs.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoTriangulo\obj\Debug\net10.0\ClassificaçãoTriangulo.sourcelink.json
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoTriangulo\obj\Debug\net10.0\ClassificaçãoTriangulo.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoTriangulo\obj\Debug\net10.0\refint\ClassificaçãoTriangulo.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoTriangulo\obj\Debug\net10.0\ClassificaçãoTriangulo.pdb
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoTriangulo\obj\Debug\net10.0\ClassificaçãoTriangulo.genruntimeconfig.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoTriangulo\obj\Debug\net10.0\ref\ClassificaçãoTriangulo.dll

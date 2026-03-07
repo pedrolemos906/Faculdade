@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "QualMaior3Numeros/1.0.0": {
+        "runtime": {
+          "QualMaior3Numeros.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "QualMaior3Numeros/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
