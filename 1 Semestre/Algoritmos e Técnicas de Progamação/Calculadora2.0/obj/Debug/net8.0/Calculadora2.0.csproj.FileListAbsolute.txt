@@ -1,0 +1,15 @@
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Calculadora2.0/obj/Debug/net8.0/Calculadora2.0.GeneratedMSBuildEditorConfig.editorconfig
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Calculadora2.0/obj/Debug/net8.0/Calculadora2.0.AssemblyInfoInputs.cache
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Calculadora2.0/obj/Debug/net8.0/Calculadora2.0.AssemblyInfo.cs
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Calculadora2.0/obj/Debug/net8.0/Calculadora2.0.csproj.CoreCompileInputs.cache
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Calculadora2.0/obj/Debug/net8.0/Calculadora2.0.sourcelink.json
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Calculadora2.0/bin/Debug/net8.0/Calculadora2.0
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Calculadora2.0/bin/Debug/net8.0/Calculadora2.0.deps.json
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Calculadora2.0/bin/Debug/net8.0/Calculadora2.0.runtimeconfig.json
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Calculadora2.0/bin/Debug/net8.0/Calculadora2.0.dll
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Calculadora2.0/bin/Debug/net8.0/Calculadora2.0.pdb
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Calculadora2.0/obj/Debug/net8.0/Calculadora2.0.dll
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Calculadora2.0/obj/Debug/net8.0/refint/Calculadora2.0.dll
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Calculadora2.0/obj/Debug/net8.0/Calculadora2.0.pdb
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Calculadora2.0/obj/Debug/net8.0/Calculadora2.0.genruntimeconfig.cache
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Calculadora2.0/obj/Debug/net8.0/ref/Calculadora2.0.dll

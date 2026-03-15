@@ -1,0 +1,15 @@
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Teste/obj/Debug/net8.0/Teste.GeneratedMSBuildEditorConfig.editorconfig
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Teste/obj/Debug/net8.0/Teste.AssemblyInfoInputs.cache
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Teste/obj/Debug/net8.0/Teste.AssemblyInfo.cs
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Teste/obj/Debug/net8.0/Teste.csproj.CoreCompileInputs.cache
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Teste/obj/Debug/net8.0/Teste.sourcelink.json
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Teste/bin/Debug/net8.0/Teste
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Teste/bin/Debug/net8.0/Teste.deps.json
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Teste/bin/Debug/net8.0/Teste.runtimeconfig.json
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Teste/bin/Debug/net8.0/Teste.dll
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Teste/bin/Debug/net8.0/Teste.pdb
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Teste/obj/Debug/net8.0/Teste.dll
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Teste/obj/Debug/net8.0/refint/Teste.dll
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Teste/obj/Debug/net8.0/Teste.pdb
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Teste/obj/Debug/net8.0/Teste.genruntimeconfig.cache
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/Teste/obj/Debug/net8.0/ref/Teste.dll

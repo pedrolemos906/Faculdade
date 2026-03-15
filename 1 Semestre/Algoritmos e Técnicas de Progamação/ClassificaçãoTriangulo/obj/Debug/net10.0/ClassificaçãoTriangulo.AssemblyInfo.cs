@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClassificaçãoTriangulo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5cb9d5751e9ec494f3a8132629c4ff5a9c80e680")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88d83fe3ef8c3133861b3dde9f6208d7fed8970b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClassificaçãoTriangulo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClassificaçãoTriangulo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -8,13 +8,8 @@ class Program
 
         int ano = int.Parse(Console.ReadLine());
 
-        int regra1 = ano % 400;
 
-        int regra2 = ano % 100;
-
-        int regra3 = ano % 4;
-
-        if ((regra3 == 0) && (regra2 != 0) || (regra1 != 0)) Console.Write(ano + " é um ano Bissexto");
+        if ((ano % 4 == 0) && (ano % 100 != 0) || (ano % 400 != 0)) Console.Write(ano + " é um ano Bissexto");
 
         else
         { 
