@@ -1,0 +1,15 @@
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/DiasVividos/bin/Debug/net8.0/DiasVividos
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/DiasVividos/bin/Debug/net8.0/DiasVividos.deps.json
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/DiasVividos/bin/Debug/net8.0/DiasVividos.runtimeconfig.json
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/DiasVividos/bin/Debug/net8.0/DiasVividos.dll
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/DiasVividos/bin/Debug/net8.0/DiasVividos.pdb
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/DiasVividos/obj/Debug/net8.0/DiasVividos.GeneratedMSBuildEditorConfig.editorconfig
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/DiasVividos/obj/Debug/net8.0/DiasVividos.AssemblyInfoInputs.cache
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/DiasVividos/obj/Debug/net8.0/DiasVividos.AssemblyInfo.cs
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/DiasVividos/obj/Debug/net8.0/DiasVividos.csproj.CoreCompileInputs.cache
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/DiasVividos/obj/Debug/net8.0/DiasVividos.sourcelink.json
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/DiasVividos/obj/Debug/net8.0/DiasVividos.dll
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/DiasVividos/obj/Debug/net8.0/refint/DiasVividos.dll
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/DiasVividos/obj/Debug/net8.0/DiasVividos.pdb
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/DiasVividos/obj/Debug/net8.0/DiasVividos.genruntimeconfig.cache
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/DiasVividos/obj/Debug/net8.0/ref/DiasVividos.dll

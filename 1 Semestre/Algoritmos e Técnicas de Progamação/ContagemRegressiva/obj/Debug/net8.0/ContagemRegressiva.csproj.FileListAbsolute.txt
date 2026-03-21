@@ -1,0 +1,15 @@
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/ContagemRegressiva/bin/Debug/net8.0/ContagemRegressiva
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/ContagemRegressiva/bin/Debug/net8.0/ContagemRegressiva.deps.json
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/ContagemRegressiva/bin/Debug/net8.0/ContagemRegressiva.runtimeconfig.json
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/ContagemRegressiva/bin/Debug/net8.0/ContagemRegressiva.dll
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/ContagemRegressiva/bin/Debug/net8.0/ContagemRegressiva.pdb
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/ContagemRegressiva/obj/Debug/net8.0/ContagemRegressiva.GeneratedMSBuildEditorConfig.editorconfig
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/ContagemRegressiva/obj/Debug/net8.0/ContagemRegressiva.AssemblyInfoInputs.cache
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/ContagemRegressiva/obj/Debug/net8.0/ContagemRegressiva.AssemblyInfo.cs
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/ContagemRegressiva/obj/Debug/net8.0/ContagemRegressiva.csproj.CoreCompileInputs.cache
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/ContagemRegressiva/obj/Debug/net8.0/ContagemRegressiva.sourcelink.json
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/ContagemRegressiva/obj/Debug/net8.0/ContagemRegressiva.dll
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/ContagemRegressiva/obj/Debug/net8.0/refint/ContagemRegressiva.dll
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/ContagemRegressiva/obj/Debug/net8.0/ContagemRegressiva.pdb
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/ContagemRegressiva/obj/Debug/net8.0/ContagemRegressiva.genruntimeconfig.cache
+/home/pedro/Área de trabalho/Workspace/Faculdade/1 Semestre/Algoritmos e Técnicas de Progamação/ContagemRegressiva/obj/Debug/net8.0/ref/ContagemRegressiva.dll
