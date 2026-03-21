@@ -1,0 +1,15 @@
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoNota\bin\Debug\net10.0\ClassificaçãoNota.exe
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoNota\bin\Debug\net10.0\ClassificaçãoNota.deps.json
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoNota\bin\Debug\net10.0\ClassificaçãoNota.runtimeconfig.json
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoNota\bin\Debug\net10.0\ClassificaçãoNota.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoNota\bin\Debug\net10.0\ClassificaçãoNota.pdb
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoNota\obj\Debug\net10.0\ClassificaçãoNota.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoNota\obj\Debug\net10.0\ClassificaçãoNota.AssemblyInfoInputs.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoNota\obj\Debug\net10.0\ClassificaçãoNota.AssemblyInfo.cs
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoNota\obj\Debug\net10.0\ClassificaçãoNota.csproj.CoreCompileInputs.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoNota\obj\Debug\net10.0\ClassificaçãoNota.sourcelink.json
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoNota\obj\Debug\net10.0\ClassificaçãoNota.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoNota\obj\Debug\net10.0\refint\ClassificaçãoNota.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoNota\obj\Debug\net10.0\ClassificaçãoNota.pdb
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoNota\obj\Debug\net10.0\ClassificaçãoNota.genruntimeconfig.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\ClassificaçãoNota\obj\Debug\net10.0\ref\ClassificaçãoNota.dll

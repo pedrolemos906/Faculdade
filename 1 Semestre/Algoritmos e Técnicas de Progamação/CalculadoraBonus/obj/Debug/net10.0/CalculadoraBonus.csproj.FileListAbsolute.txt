@@ -1,0 +1,15 @@
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\CalculadoraBonus\bin\Debug\net10.0\CalculadoraBonus.exe
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\CalculadoraBonus\bin\Debug\net10.0\CalculadoraBonus.deps.json
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\CalculadoraBonus\bin\Debug\net10.0\CalculadoraBonus.runtimeconfig.json
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\CalculadoraBonus\bin\Debug\net10.0\CalculadoraBonus.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\CalculadoraBonus\bin\Debug\net10.0\CalculadoraBonus.pdb
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\CalculadoraBonus\obj\Debug\net10.0\CalculadoraBonus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\CalculadoraBonus\obj\Debug\net10.0\CalculadoraBonus.AssemblyInfoInputs.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\CalculadoraBonus\obj\Debug\net10.0\CalculadoraBonus.AssemblyInfo.cs
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\CalculadoraBonus\obj\Debug\net10.0\CalculadoraBonus.csproj.CoreCompileInputs.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\CalculadoraBonus\obj\Debug\net10.0\CalculadoraBonus.sourcelink.json
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\CalculadoraBonus\obj\Debug\net10.0\CalculadoraBonus.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\CalculadoraBonus\obj\Debug\net10.0\refint\CalculadoraBonus.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\CalculadoraBonus\obj\Debug\net10.0\CalculadoraBonus.pdb
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\CalculadoraBonus\obj\Debug\net10.0\CalculadoraBonus.genruntimeconfig.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\1 Semestre\Algoritmos e Técnicas de Progamação\CalculadoraBonus\obj\Debug\net10.0\ref\CalculadoraBonus.dll

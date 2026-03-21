@@ -4,15 +4,38 @@ using System;
 {
     static void Main()
     {
-        double salario, novosalario, bonus, auxilio;
+        double salario, salarioBonus = 0, salarioEscola = 0, novoSalario = 0;
 
         Console.WriteLine("Calculadora de Sálario.");
 
-        Console.WriteLine("Qual o valor do sálario Bruto: ")
+        Console.Write("Qual o valor do sálario Bruto: R$ ");
         salario = double.Parse(Console.ReadLine());
-        
-        if (salario <= 500);
-            novosalario = salario + (salario *0,5);
+
+
+        // bonus 
+        if (salario <= 500)
+            salarioBonus = salario + (salario * 0.05);
+
+        else if (salario > 500 && salario < 1200)
+            salarioBonus = salario + (salario * 0.12);
+                
+        else 
+            salarioBonus = salario;
+
+        // auxilio creche
+        if (salario <= 600)
+            salarioEscola = 150;
+
+        else if (salario > 600)
+            salarioEscola = 100;
+                
+                
+
+        novoSalario = salarioBonus + salarioEscola;
+
+        Console.WriteLine("O salario total do funcionario é: R$ " + novoSalario);
+
+
     }
 
 

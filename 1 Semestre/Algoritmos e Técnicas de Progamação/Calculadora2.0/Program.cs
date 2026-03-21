@@ -6,7 +6,7 @@ class Program
     static void Main()
     {
 
-        double num1, num2, resultado;
+        double num1, num2, resultado = 0;
 
         Console.WriteLine("Calculadora");
 
@@ -32,9 +32,19 @@ class Program
                 break;
             case '*' : resultado = num1 * num2;
                 break;
-            case '/' : resultado = num1 / num2;
+            case '/' : 
+                if (num2 != 0)
+                {
+                    resultado = num1 / num2;
+                }
+                else
+                {
+                    Console.WriteLine("Erro: divisão por zero pode resultar em um Buraco Negro!!");
+                    return;
+                }
                 break;
-            default: Console.Write("Operador inválido!");
+            default: 
+                Console.Write("Operador inválido!");
                 break;
         }
 
