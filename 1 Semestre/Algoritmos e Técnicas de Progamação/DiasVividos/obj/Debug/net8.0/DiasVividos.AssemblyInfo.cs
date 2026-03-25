@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DiasVividos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef1fe7f1c8982ddd149991cb5d457489e61dc8fb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+178ad810fcf199da6eaf77ca0ab7e29f813110d3")]
 [assembly: System.Reflection.AssemblyProductAttribute("DiasVividos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DiasVividos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
