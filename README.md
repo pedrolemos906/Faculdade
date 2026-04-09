@@ -1,2 +1,0 @@
-# Faculdade
-Conteúdo da Faculdade
