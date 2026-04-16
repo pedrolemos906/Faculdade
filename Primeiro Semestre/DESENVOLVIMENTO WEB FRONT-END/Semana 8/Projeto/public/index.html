@@ -1,83 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<title>Player Profile - Pedro</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Game - Pedro</title>
 
-<link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
+  <!--header-->
+  <header class="topo">
+    <h1>🎮 Meu Blog</h1>
 
-    <!-- TOPO -->
-    <section class="topo">
-        <div class="foto">👤</div>
+    <nav>
+      <a href="#">Sobre</a>
+      <a href="#">Storytelling</a>
+      <a href="#">Conquistas</a>
+    </nav>
+  </header>
 
-        <div class="info">
-            <h1>Pedro Lemos</h1>
-            <p>Transformando a vida em um jogo 🎮</p>
-        </div>
+  <!--perfil-->
+  <section class="perfil">
+    <h2>Pedro Lemos</h2>
+    <p>Level 3 • Dev em evolução</p>
 
+    <!-- Barra de XP -->
+    <div class="xp-bar">
+      <div class="xp-fill"></div>
+    </div>
+  </section>
 
-        <div class="lado-direito">
-            <div style="text-align: center;" class="cardstorytelling" >Storytelling</div>
-            <div class="cardstatus">
-                <h3 style="text-align: center;">Status atual</h3>
-                <h5>Faculdade - Sistemas de Infomação.(1/8)</h5>
-                <h5>Curso - Introdução a computação quântica</h5>
-                <h5>livro atual - "Nada pode me ferir"</h5>
-                <h5>Jogando - Dark Soul 3</h5>
-            </div>
-        </div>
-    </section>
+  <!--conquista-->
+  <section class="conquistas">
+    <h2>🏆 Achievements</h2>
 
-    <!-- CONQUISTAS -->
-    <section class="conquistas">
-        <h2>🏆 Conquistas</h2>
-        <div class="badges"></div>
-    </section>
+    <div class="lista-conquistas">
+      <div class="badge ativo">✔ Primeiro Projeto</div>
+      <div class="badge ativo">✔ Layout Responsivo</div>
+      <div class="badge bloqueado">🔒 Criar API</div>
+      <div class="badge bloqueado">🔒 Deploy</div>
+    </div>
+  </section>
 
-    <!-- CONTEUDO -->
-    <section class="conteudo">
+  <!--postdestaque-->
+  <section class="destaque">
+    <h2>📌 Post em Destaque</h2>
 
-        <!-- POSTS -->
-        <main class="posts">
-            <h2>📝 Posts</h2>
-            <div class="post-container"></div>
-        </main>
+    <div class="card-destaque">
+      <div class="thumb"></div>
 
-        <!-- SIDEBAR -->
-        <aside class="sidebar">
+      <div class="texto">
+        <h3>Review: Livro X</h3>
+        <p>Uma análise sobre aprendizados e ideias principais...</p>
+      </div>
+    </div>
+  </section>
 
-            <div class="box">
-                <h3>🎯 Em progresso</h3>
-                <div class="progress-container"></div>
-            </div>
+  <!--post-->
+  <section class="posts">
+    <h2>📝 Últimos Posts</h2>
 
-            <div class="box">
-                <h3>📌 Quero fazer</h3>
-                <ul>
-                    <li>Aprender React</li>
-                    <li>Ler 12 livros</li>
-                    <li>Projeto pessoal</li>
-                </ul>
-            </div>
+    <div class="grid-posts">
+      <div class="post">Review Game 🎮</div>
+      <div class="post">Review Livro 📚</div>
+      <div class="post">Nova conquista 🏆</div>
+      <div class="post">Reflexão 💭</div>
+    </div>
+  </section>
 
-        </aside>
+  <!--footer-->
+  <footer>
+    <p>© Pedro Lemos - Leveling up 🚀</p>
+  </footer>
 
-    </section>
-
-    <!-- RODAPÉ -->
-    <footer>
-        <p>© 2026 - Player Pedro</p>
-    </footer>
-
-</div>
-
-<script src="js/app.js"></script>
 </body>
 </html>
+

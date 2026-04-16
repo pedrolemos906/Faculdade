@@ -1,23 +1,45 @@
 ﻿//Faça um programa que realize as quatro operaçoes básicas. 
 using System;
-class Progam
+class Program
 {
     static void Main()
     {
-        double a, b;
+        double a, b, resultado;
         char op;
 
         Console.WriteLine("esse programa é uma calculadora simples.");
-        Console.WriteLine("informe o primerio número: ");
+        Console.Write("informe o primerio número: ");
         a = double.Parse(Console.ReadLine());
-        Console.WriteLine("informe o segundo número: ");
+        Console.Write("informe o segundo número: ");
         b = double.Parse(Console.ReadLine());
-        Console.WriteLine("informe a operação que deseja fazer [+, -, *, /]: ");
-        
-        
+        Console.Write("informe a operação que deseja fazer [+, -, *, /]: ");
+        op = char.Parse(Console.ReadLine());
 
+        switch (op)
+        {
+            case '+' : resultado = a + b;
+                break;
+            case '-' : resultado = a - b;
+                break;
+            case '*' : resultado = a * b;
+                break;
+            case '/' : 
+                if (b != 0)
+                {
+                    resultado = a / b;                  
+                }
+                else
+                {
+                    Console.WriteLine("Erro: divisão por zero pode resultar em um buraco negro!!");
+                    return;
+                }
+                break;
+            default:
+                Console.WriteLine("Operador invalido.");
+                return;
+        }
 
-        Console.WriteLine($"{posicao1}, {posicao2}, {posicao3}");
+        Console.WriteLine("O resultado da operação é " + resultado);
 
     }
 }

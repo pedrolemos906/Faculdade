@@ -1,0 +1,161 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*corpo*/
+body {
+  background: #0f172a; /* fundo escuro estilo game */
+  color: #fff;
+  font-family: 'Press Start 2P', cursive;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/*header*/
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e293b;
+  padding: 15px;
+  border: 3px solid #38bdf8;
+}
+
+.topo a {
+  color: #38bdf8;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+/*perfil*/
+.perfil {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.perfil h2 {
+  margin-bottom: 10px;
+}
+
+/*barraxp*/
+.xp-bar {
+  width: 100%;
+  height: 20px;
+  background: #334155;
+  border: 2px solid #38bdf8;
+  margin-top: 10px;
+}
+
+.xp-fill {
+  width: 60%; /* controle do progresso */
+  height: 100%;
+  background: #22c55e;
+}
+
+/*conquista*/
+.conquistas {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.lista-conquistas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+/*badges*/
+.badge {
+  padding: 10px;
+  border: 2px solid #fff;
+  font-size: 10px;
+}
+
+/* conquistado */
+.ativo {
+  background: #22c55e;
+}
+
+/* bloqueado */
+.bloqueado {
+  background: #64748b;
+  opacity: 0.6;
+}
+
+/*destaque*/
+.destaque {
+  margin: 40px 0;
+}
+
+.card-destaque {
+  display: flex;
+  gap: 20px;
+  background: #1e293b;
+  padding: 20px;
+  border: 3px solid #facc15;
+}
+
+/*imagem*/
+.thumb {
+  width: 120px;
+  height: 120px;
+  background: #334155;
+}
+
+/*post*/
+.posts {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.grid-posts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* card */
+.post {
+  background: #1e293b;
+  padding: 20px;
+  border: 2px solid #38bdf8;
+  transition: 0.3s;
+}
+
+.post:hover {
+  transform: scale(1.05);
+}
+
+/*FOOTER */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 10px;
+}
+
+/*efeito*/
+@media (max-width: 900px) {
+  .grid-posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-destaque {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .grid-posts {
+    grid-template-columns: 1fr;
+  }
+
+  .topo {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
