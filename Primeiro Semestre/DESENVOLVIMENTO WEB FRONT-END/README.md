@@ -1,14 +1,5 @@
-Essa pagina Lista todos os elementos de:
-	HTML
-	CSS
-	JavaScript
 
-https://developer.mozilla.org/pt-BR/
-
-Open Graph Protocol
-	configurações de compartilhamento em redes sociais.
 	
-
 | Semana | Início   | Fim     | Conteúdo Prévio | Prática em Sala / Atividades |
 |--------|----------|---------|-----------------|------------------------------|
 |	 1   | 23/fev   | 01/mar  | — | Apresentação da disciplina; Introdução à Web; VSCode e Chrome; HTML e CSS básicos. <br> **Atividade:** Criar página básica |
