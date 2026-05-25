@@ -1,0 +1,1199 @@
+/* ================================================
+   TALKHUB — style.css
+
+   Estrutura espelha o HTML:
+   ┌─────────────────────────────┐
+   │  BASE (variáveis e reset)   │
+   ├─────────────────────────────┤
+   │  <header>  cabeçalho        │
+   ├─────────────────────────────┤
+   │  <body>    hero             │
+   │            recursos         │
+   │            como funciona    │
+   │            idiomas          │
+   │            cta final        │
+   ├─────────────────────────────┤
+   │  <footer>  rodapé           │
+   └─────────────────────────────┘
+================================================ */
+
+
+/* ================================================
+   BASE
+   Tudo que não pertence a uma seção específica:
+   variáveis globais, reset e classes reutilizáveis.
+================================================ */
+
+/* ── Variáveis ──────────────────────────────────
+   Cores e tamanhos do projeto definidos em um
+   lugar só. Para mudar a identidade visual, basta
+   alterar esses valores — o resto se atualiza.
+------------------------------------------------ */
+:root {
+  /* Cor principal (roxo TalkHub) */
+  --cor-marca:        #534AB7;
+  --cor-marca-clara:  #7F77DD;
+  --cor-marca-palida: #EEEDFE;
+
+  /* Fundo escuro do cabeçalho e CTA final */
+  --cor-escura:       #26215C;
+  --cor-escura-meio:  #3C3489;
+
+  /* Cores neutras */
+  --cor-texto:        #18181b;
+  --cor-texto-suave:  #71717a;
+  --cor-fundo:        #ffffff;
+  --cor-fundo-cinza:  #f4f4f5;
+  --cor-borda:        #e4e4e7;
+
+  /* Tipografia */
+  --fonte: 'Segoe UI', system-ui, sans-serif;
+
+  /* Espaçamentos */
+  --espaco-sm:  8px;
+  --espaco-md: 16px;
+  --espaco-lg: 32px;
+  --espaco-xl: 64px;
+
+  /* Bordas arredondadas */
+  --raio:      10px;
+  --raio-pill: 999px;
+}
+
+/* ── Reset ──────────────────────────────────────
+   Remove margens e paddings padrão do navegador.
+------------------------------------------------ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth; /* rolagem suave em links âncora */
+}
+
+body {
+  font-family: var(--fonte);
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ── Reutilizáveis ──────────────────────────────
+   Classes usadas em múltiplas seções da página.
+------------------------------------------------ */
+
+/* Limita a largura e centraliza o conteúdo */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 var(--espaco-lg);
+}
+
+/* Botão base — todas as variantes partem daqui */
+.botao {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: var(--raio);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.botao--primario {
+  background-color: var(--cor-marca);
+  color: #ffffff;
+}
+.botao--primario:hover {
+  background-color: var(--cor-escura-meio);
+}
+
+.botao--contorno {
+  background-color: transparent;
+  border-color: var(--cor-marca-clara);
+  color: var(--cor-marca-clara);
+}
+.botao--contorno:hover {
+  background-color: var(--cor-marca-palida);
+  color: var(--cor-marca);
+  border-color: var(--cor-marca);
+}
+
+.botao--claro {
+  background-color: var(--cor-marca-clara);
+  color: var(--cor-escura);
+}
+.botao--claro:hover {
+  background-color: #ffffff;
+}
+
+.botao--grande {
+  padding: 13px 28px;
+  font-size: 1rem;
+}
+
+/* Grids de colunas */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--espaco-lg);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--espaco-md);
+}
+
+
+/* ================================================
+   <header> CABEÇALHO
+   Barra de navegação fixada no topo da página.
+================================================ */
+.cabecalho {
+  position: fixed;   /* fica no topo mesmo ao rolar */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;      /* fica acima de todo o conteúdo */
+  background-color: var(--cor-escura);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cabecalho__interno {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.logo {
+  color: var(--cor-marca-clara);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-lg);
+}
+
+.menu__link {
+  color: var(--cor-marca-clara);
+  font-size: 0.875rem;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+.menu__link:hover {
+  opacity: 1;
+}
+
+
+/* ================================================
+   <body> CONTEÚDO PRINCIPAL
+   Seções na mesma ordem que aparecem no HTML.
+================================================ */
+
+/* ── Hero ───────────────────────────────────────
+   Primeira coisa que o usuário vê ao abrir a página.
+------------------------------------------------ */
+.hero {
+  padding-top: 120px;   /* empurra para baixo do cabeçalho fixo */
+  padding-bottom: 80px;
+  background-color: var(--cor-escura);
+  text-align: center;
+}
+
+.hero__conteudo {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.hero__etiqueta {
+  font-size: 0.8rem;
+  color: var(--cor-marca-clara);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: var(--espaco-md);
+  opacity: 0.85;
+}
+
+.hero__titulo {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: var(--espaco-md);
+}
+
+.destaque {
+  color: var(--cor-marca-clara);
+}
+
+.hero__subtitulo {
+  font-size: 1.125rem;
+  color: var(--cor-marca-clara);
+  opacity: 0.75;
+  margin-bottom: var(--espaco-lg);
+  line-height: 1.7;
+}
+
+.hero__botoes {
+  display: flex;
+  gap: var(--espaco-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ── Seções genéricas ───────────────────────────
+   Estilo base compartilhado entre recursos,
+   como funciona e idiomas.
+------------------------------------------------ */
+.secao {
+  padding: var(--espaco-xl) 0;
+}
+
+.secao--cinza {
+  background-color: var(--cor-fundo-cinza);
+}
+
+.secao__titulo {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: var(--espaco-lg);
+}
+
+.secao__subtitulo {
+  text-align: center;
+  color: var(--cor-texto-suave);
+  font-size: 0.9rem;
+  margin-top: -20px;
+  margin-bottom: var(--espaco-lg);
+}
+
+/* ── Recursos (cards) ───────────────────────────
+   Três cards explicando as funcionalidades.
+------------------------------------------------ */
+.card {
+  background-color: var(--cor-fundo);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  padding: var(--espaco-lg);
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+.card:hover {
+  box-shadow: 0 4px 20px rgba(83, 74, 183, 0.1);
+}
+
+.card__icone {
+  font-size: 2rem;
+  margin-bottom: var(--espaco-md);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background-color: var(--cor-marca-palida);
+  border-radius: var(--raio);
+}
+
+.card__titulo {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: var(--espaco-sm);
+}
+
+.card__texto {
+  font-size: 0.875rem;
+  color: var(--cor-texto-suave);
+  line-height: 1.7;
+}
+
+/* ── Como funciona (passos) ─────────────────────
+   Quatro cards em grid 2x2 com número + texto.
+------------------------------------------------ */
+.passo {
+  background-color: var(--cor-fundo);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  padding: var(--espaco-lg);
+  display: flex;
+  gap: var(--espaco-md);
+  align-items: flex-start;
+}
+
+.passo__numero {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--cor-marca-palida);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.passo__titulo {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.passo__texto {
+  font-size: 0.875rem;
+  color: var(--cor-texto-suave);
+  line-height: 1.6;
+}
+
+/* ── Idiomas ────────────────────────────────────
+   Lista de pills com bandeira + nome do idioma.
+------------------------------------------------ */
+.lista-idiomas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaco-sm);
+  justify-content: center;
+}
+
+.idioma {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-pill);
+  background-color: var(--cor-fundo-cinza);
+  font-size: 0.875rem;
+  color: var(--cor-texto);
+}
+
+/* ── CTA final ──────────────────────────────────
+   Chamada para ação antes do rodapé.
+------------------------------------------------ */
+.cta-final {
+  background-color: var(--cor-escura);
+  padding: var(--espaco-xl) 0;
+}
+
+.cta-final__conteudo {
+  text-align: center;
+  max-width: 560px;
+}
+
+.cta-final__titulo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: var(--espaco-sm);
+}
+
+.cta-final__texto {
+  color: var(--cor-marca-clara);
+  opacity: 0.75;
+  font-size: 0.9rem;
+  margin-bottom: var(--espaco-lg);
+  line-height: 1.7;
+}
+
+
+/* ================================================
+   <footer> RODAPÉ
+================================================ */
+.rodape {
+  padding: var(--espaco-lg) 0;
+  border-top: 1px solid var(--cor-borda);
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--cor-texto-suave);
+}
+
+
+/* ================================================
+   PÁGINAS DE FORMULÁRIO
+   Usada no login.html e futuramente no register.html.
+   Um único bloco de estilos serve para ambas as páginas.
+================================================ */
+
+/* ── Área que ocupa a tela toda ─────────────────
+   Centraliza a caixa do formulário
+   vertical e horizontalmente.
+------------------------------------------------ */
+.pagina-form {
+  min-height: 100vh;         /* ocupa a altura inteira da tela */
+  display: flex;
+  align-items: center;       /* centraliza na vertical */
+  justify-content: center;   /* centraliza na horizontal */
+  background-color: var(--cor-fundo-cinza);
+  padding: 80px var(--espaco-md) var(--espaco-md);
+                             /* 80px no topo por causa do cabeçalho fixo */
+}
+
+/* ── Caixa branca do formulário ─────────────────
+   O card que contém logo, título e campos.
+------------------------------------------------ */
+.form-caixa {
+  background-color: var(--cor-fundo);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  padding: var(--espaco-lg);
+  width: 100%;
+  max-width: 420px;          /* nunca fica largo demais */
+}
+
+.form-caixa__logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--espaco-lg);
+}
+
+.form-caixa__titulo {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.form-caixa__subtitulo {
+  font-size: 0.875rem;
+  color: var(--cor-texto-suave);
+  text-align: center;
+  margin-bottom: var(--espaco-lg);
+}
+
+/* ── Formulário ─────────────────────────────────
+   Campos empilhados com espaço entre eles.
+------------------------------------------------ */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-md);
+}
+
+/* ── Campo individual ───────────────────────────
+   Label + input agrupados.
+------------------------------------------------ */
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Linha com label e link lado a lado (ex: "Senha" + "Esqueceu?") */
+.campo__cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.campo__label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--cor-texto);
+}
+
+.campo__link {
+  font-size: 0.8rem;
+  color: var(--cor-marca);
+}
+.campo__link:hover {
+  text-decoration: underline;
+}
+
+.campo__input {
+  height: 42px;
+  padding: 0 12px;
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  font-size: 0.9rem;
+  font-family: var(--fonte);
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+/* Destaca o campo quando o usuário clica nele */
+.campo__input:focus {
+  border-color: var(--cor-marca);
+  box-shadow: 0 0 0 3px var(--cor-marca-palida);
+}
+
+/* ── Botão cheio (largura total) ────────────────
+   Usado dentro do formulário para ocupar
+   toda a largura da caixa.
+------------------------------------------------ */
+.botao--cheio {
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+  font-size: 1rem;
+  margin-top: var(--espaco-sm);
+}
+
+/* ── Rodapé da caixa ────────────────────────────
+   Texto com link para criar conta.
+------------------------------------------------ */
+.form-caixa__rodape {
+  margin-top: var(--espaco-md);
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--cor-texto-suave);
+}
+
+.form-caixa__link {
+  color: var(--cor-marca);
+  font-weight: 500;
+}
+.form-caixa__link:hover {
+  text-decoration: underline;
+}
+
+
+/* ================================================
+   CADASTRO — register.html
+   Estilos específicos do formulário de 2 passos.
+================================================ */
+
+/* ── Caixa mais larga (passo 2 precisa de espaço) */
+.form-caixa--larga {
+  max-width: 580px;
+}
+
+/* ── Utilitário: esconde um elemento ────────────
+   Usado pelo JavaScript para alternar os passos.
+------------------------------------------------ */
+.oculto {
+  display: none;
+}
+
+/* ── Indicador de progresso ─────────────────────
+   Mostra "1 — Seus dados  ——  2 — Preferências"
+------------------------------------------------ */
+.progresso {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-sm);
+  margin-bottom: var(--espaco-lg);
+}
+
+.progresso__passo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.4;               /* apagado por padrão */
+  transition: opacity 0.3s;
+}
+
+/* Passo ativo fica com opacidade total */
+.progresso__passo--ativo {
+  opacity: 1;
+}
+
+.progresso__numero {
+  width: 28px;
+  height: 28px;
+  border-radius: var(--raio-pill);
+  background-color: var(--cor-marca-palida);
+  color: var(--cor-marca);
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progresso__passo--ativo .progresso__numero {
+  background-color: var(--cor-marca);
+  color: #ffffff;
+}
+
+.progresso__texto {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--cor-texto);
+}
+
+/* Linha que conecta os dois passos */
+.progresso__linha {
+  flex: 1;
+  height: 1px;
+  background-color: var(--cor-borda);
+}
+
+/* ── Dica abaixo do label ───────────────────────*/
+.campo__dica {
+  font-size: 0.8rem;
+  color: var(--cor-texto-suave);
+  margin-top: -2px;
+  margin-bottom: 10px;
+}
+
+/* ── Chips de idioma ────────────────────────────
+   O <input> fica escondido.
+   O <label> tem a aparência de pill clicável.
+   Quando o checkbox está marcado (:checked),
+   o CSS seleciona o label seguinte e o colore.
+------------------------------------------------ */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaco-sm);
+}
+
+/* Esconde o input mas mantém funcionando */
+.chip__input {
+  display: none;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 16px;
+  border: 1.5px solid var(--cor-borda);
+  border-radius: var(--raio-pill);
+  background-color: var(--cor-fundo);
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: border-color 0.15s, background-color 0.15s, color 0.15s;
+}
+
+.chip:hover {
+  border-color: var(--cor-marca-clara);
+}
+
+/* Quando o checkbox está marcado, colore o label */
+.chip__input:checked + .chip {
+  background-color: var(--cor-marca-palida);
+  border-color: var(--cor-marca);
+  color: var(--cor-marca);
+  font-weight: 500;
+}
+
+/* ── Grade de disponibilidade ───────────────────
+   Cada linha = dia da semana
+   Cada coluna = período (manhã, tarde, noite...)
+   Mesmo truque dos chips: input escondido + label clicável.
+------------------------------------------------ */
+.grade-disponibilidade {
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  overflow: hidden;           /* arredonda as bordas internas */
+  margin-top: 4px;
+}
+
+/* Cabeçalho e linhas usam grid de 5 colunas:
+   1 para o dia + 4 para os períodos */
+.grade__cabecalho,
+.grade__linha {
+  display: grid;
+  grid-template-columns: 60px repeat(4, 1fr);
+}
+
+/* Separador entre as linhas */
+.grade__linha {
+  border-top: 1px solid var(--cor-borda);
+}
+
+/* Célula base */
+.grade__celula {
+  padding: 10px 6px;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Célula vazia (canto superior esquerdo) */
+.grade__celula--vazia {
+  background-color: var(--cor-fundo-cinza);
+}
+
+/* Título de coluna (Manhã, Tarde...) */
+.grade__celula--titulo {
+  background-color: var(--cor-fundo-cinza);
+  font-weight: 500;
+  color: var(--cor-texto-suave);
+  border-left: 1px solid var(--cor-borda);
+}
+
+/* Nome do dia (Seg, Ter...) */
+.grade__celula--dia {
+  font-weight: 500;
+  color: var(--cor-texto);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-fundo-cinza);
+}
+
+/* Input escondido */
+.grade__input {
+  display: none;
+}
+
+/* Slot clicável */
+.grade__slot {
+  cursor: pointer;
+  border-left: 1px solid var(--cor-borda);
+  transition: background-color 0.15s;
+}
+
+.grade__slot:hover {
+  background-color: var(--cor-marca-palida);
+}
+
+/* Slot marcado */
+.grade__input:checked + .grade__slot {
+  background-color: var(--cor-marca-palida);
+  border-color: var(--cor-marca-palida);
+}
+
+/* Ícone de check no slot marcado */
+.grade__input:checked + .grade__slot::after {
+  content: '✓';
+  font-size: 0.85rem;
+  color: var(--cor-marca);
+  font-weight: 600;
+}
+
+/* ── Rodapé do formulário do passo 2 ────────────
+   Botões "Voltar" e "Criar conta" lado a lado.
+------------------------------------------------ */
+.formulario__rodape {
+  display: flex;
+  gap: var(--espaco-md);
+  margin-top: var(--espaco-sm);
+}
+
+.formulario__btn-finalizar {
+  flex: 1;                    /* ocupa o espaço restante */
+  text-align: center;
+  padding: 12px;
+}
+
+
+/* ================================================
+   DASHBOARD — dashboard.html
+   Layout com sidebar fixa + área de conteúdo.
+================================================ */
+
+/* ── Layout geral ───────────────────────────────
+   O body vira um grid de 2 colunas:
+   sidebar | conteúdo principal
+------------------------------------------------ */
+.pagina-dashboard {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  min-height: 100vh;
+}
+
+/* ── Sidebar ────────────────────────────────────*/
+.sidebar {
+  background-color: var(--cor-escura);
+  padding: var(--espaco-lg) var(--espaco-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-lg);
+  position: sticky;       /* fica fixo ao rolar o conteúdo */
+  top: 0;
+  height: 100vh;
+}
+
+.sidebar__logo {
+  padding-bottom: var(--espaco-md);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.sidebar__perfil {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-sm);
+}
+
+.sidebar__nome {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.sidebar__idioma {
+  font-size: 0.75rem;
+  color: var(--cor-marca-clara);
+  opacity: 0.75;
+  margin-top: 2px;
+}
+
+.sidebar__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;           /* empurra o botão "sair" para o fim */
+}
+
+.sidebar__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 10px;
+  border-radius: var(--raio);
+  font-size: 0.875rem;
+  color: var(--cor-marca-clara);
+  opacity: 0.7;
+  transition: opacity 0.2s, background-color 0.2s;
+  text-decoration: none;
+}
+
+.sidebar__item:hover {
+  opacity: 1;
+  background-color: rgba(255,255,255,0.06);
+}
+
+/* Item ativo (página atual) */
+.sidebar__item--ativo {
+  opacity: 1;
+  background-color: rgba(127, 119, 221, 0.2);
+  color: var(--cor-marca-clara);
+}
+
+.sidebar__icone {
+  font-size: 1rem;
+}
+
+/* ── Avatar ─────────────────────────────────────
+   Círculo colorido com as iniciais do usuário.
+   Variantes de cor para diferenciar os parceiros.
+------------------------------------------------ */
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--raio-pill);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.avatar--roxo   { background-color: #EEEDFE; color: #3C3489; }
+.avatar--verde  { background-color: #D1FAE5; color: #065F46; }
+.avatar--laranja{ background-color: #FEF3C7; color: #92400E; }
+.avatar--azul   { background-color: #DBEAFE; color: #1E40AF; }
+
+/* ── Conteúdo principal ─────────────────────────*/
+.dashboard-main {
+  padding: var(--espaco-lg);
+  background-color: var(--cor-fundo-cinza);
+  min-height: 100vh;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--espaco-lg);
+}
+
+.dashboard-header__titulo {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.dashboard-header__subtitulo {
+  font-size: 0.875rem;
+  color: var(--cor-texto-suave);
+  margin-top: 4px;
+}
+
+/* Badge de notificação */
+.badge {
+  background-color: var(--cor-marca);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: var(--raio-pill);
+  white-space: nowrap;
+}
+
+/* ── Filtros ────────────────────────────────────*/
+.filtros {
+  display: flex;
+  gap: var(--espaco-sm);
+  flex-wrap: wrap;
+  margin-bottom: var(--espaco-md);
+}
+
+.filtro {
+  padding: 6px 16px;
+  border-radius: var(--raio-pill);
+  border: 1px solid var(--cor-borda);
+  background-color: var(--cor-fundo);
+  font-size: 0.875rem;
+  color: var(--cor-texto-suave);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.filtro:hover {
+  border-color: var(--cor-marca-clara);
+  color: var(--cor-marca);
+}
+
+.filtro--ativo {
+  background-color: var(--cor-marca-palida);
+  border-color: var(--cor-marca);
+  color: var(--cor-marca);
+  font-weight: 500;
+}
+
+/* ── Cards de match ─────────────────────────────*/
+.lista-matches {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-md);
+}
+
+.match-card {
+  background-color: var(--cor-fundo);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  padding: var(--espaco-md) var(--espaco-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-md);
+  transition: box-shadow 0.2s;
+}
+
+.match-card:hover {
+  box-shadow: 0 2px 12px rgba(83, 74, 183, 0.1);
+}
+
+.match-card__info {
+  flex: 1;      /* ocupa o espaço disponível, empurra os outros para as bordas */
+}
+
+.match-card__nome {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.match-card__meta {
+  display: flex;
+  gap: var(--espaco-md);
+  font-size: 0.8rem;
+  color: var(--cor-texto-suave);
+  margin-top: 4px;
+  flex-wrap: wrap;
+}
+
+.match-card__slots {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #065F46;
+  background-color: #D1FAE5;
+  padding: 3px 10px;
+  border-radius: var(--raio-pill);
+  white-space: nowrap;
+}
+
+
+/* ================================================
+   MODAL DE AGENDAMENTO
+================================================ */
+
+/* Fundo escurecido atrás do modal */
+.modal-fundo {
+  position: fixed;
+  inset: 0;                     /* cobre a tela toda */
+  background-color: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: var(--espaco-md);
+}
+
+.modal {
+  background-color: var(--cor-fundo);
+  border-radius: var(--raio);
+  border: 1px solid var(--cor-borda);
+  padding: var(--espaco-lg);
+  width: 100%;
+  max-width: 420px;
+}
+
+.modal__cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--espaco-md);
+}
+
+.modal__titulo {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.modal__fechar {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--cor-texto-suave);
+  cursor: pointer;
+  padding: 4px;
+}
+.modal__fechar:hover {
+  color: var(--cor-texto);
+}
+
+.modal__perfil {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-md);
+  background-color: var(--cor-fundo-cinza);
+  padding: var(--espaco-md);
+  border-radius: var(--raio);
+  margin-bottom: var(--espaco-md);
+}
+
+.modal__nome {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.modal__idioma {
+  font-size: 0.8rem;
+  color: var(--cor-texto-suave);
+  margin-top: 2px;
+}
+
+.modal__label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: var(--espaco-sm);
+}
+
+/* Grade de slots de horário */
+.modal__slots {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--espaco-sm);
+  margin-bottom: var(--espaco-lg);
+}
+
+.slot {
+  padding: 8px;
+  border-radius: var(--raio);
+  border: 1.5px solid var(--cor-borda);
+  background-color: var(--cor-fundo);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.slot:hover {
+  border-color: var(--cor-marca);
+  color: var(--cor-marca);
+}
+
+.slot--destaque {
+  background-color: var(--cor-marca);
+  border-color: var(--cor-marca);
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.slot--selecionado {
+  background-color: var(--cor-marca-palida);
+  border-color: var(--cor-marca);
+  color: var(--cor-marca);
+  font-weight: 500;
+}
+
+.modal__acoes {
+  display: flex;
+  gap: var(--espaco-sm);
+}
+
+.modal__confirmar {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+
+/* ── Tela de confirmação ────────────────────────*/
+.modal--confirmacao {
+  text-align: center;
+}
+
+.confirmacao__icone {
+  font-size: 2.5rem;
+  margin-bottom: var(--espaco-md);
+}
+
+.confirmacao__titulo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: var(--espaco-sm);
+}
+
+.confirmacao__texto {
+  font-size: 0.875rem;
+  color: var(--cor-texto-suave);
+  margin-bottom: var(--espaco-md);
+}
+
+.confirmacao__link-box {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-sm);
+  background-color: var(--cor-fundo-cinza);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  padding: 10px var(--espaco-md);
+  margin-bottom: var(--espaco-sm);
+}
+
+.confirmacao__link-url {
+  flex: 1;
+  font-size: 0.8rem;
+  color: var(--cor-marca);
+  text-align: left;
+  word-break: break-all;
+}
+
+.confirmacao__copiar {
+  font-size: 0.8rem;
+  color: var(--cor-texto-suave);
+  background: none;
+  border: 1px solid var(--cor-borda);
+  border-radius: 6px;
+  padding: 4px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.confirmacao__copiar:hover {
+  border-color: var(--cor-marca);
+  color: var(--cor-marca);
+}
+
+.confirmacao__aviso {
+  font-size: 0.8rem;
+  color: var(--cor-texto-suave);
+  margin-bottom: var(--espaco-lg);
+}

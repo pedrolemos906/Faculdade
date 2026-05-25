@@ -1,237 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Perfil</title>
-    <style>
-/*limpar formatação automatica*/ 
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body{
-            background-color: #f2f2f2;
-            padding: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-            color: #333;
-        }
-/*limpar formatação automatica*/ 
-
-
-/*configuração dos titulos de cada*/
-        h1{
-            font-size: 42px;
-            margin-bottom: 5px;
-        }
-
-        h2{
-            font-size: 24px;
-            color: #777;
-            margin-bottom: 30px;
-        }
-
-        .section-title{
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-/*configuração dos titulos de cada*/
-
-
-/*divisão da pagina em colunas*/
-        .container{
-            display: flex;
-            justify-content: space-between;
-            gap: 40px;
-        }
-
-        .left{
-            width: 55%;
-        }
-
-        .right{
-            width: 35%;
-        }
-/*divisão da pagina em colunas*/
-
-
-/*configuração da foto de perfil*/
-        .foto{
-            width: 200px;
-            height: 200px;
-
-            border: 2px solid #ccc;
-            border-radius: 8px;
-
-            background-color: white;
-
-            margin-bottom: 25px;
-        }
-
-        .foto img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-/*configuração da foto de perfil*/
-
-
-/*caixa de informações*/
-        .info-box{
-            width: 100%;
-
-            background-color: white;
-
-            border: 1px solid #ccc;
-            border-radius: 8px;
-
-            padding: 12px;
-
-            margin-bottom: 15px;
-        }
-/*caixa de informações*/
-
-
-/*configuração dos Cards*/
-        .card{
-            background-color: white;
-
-            border: 2px solid #d5d5d5;
-
-            border-radius: 10px;
-
-            padding: 20px;
-        }
-
-        .card h3{
-            margin-bottom: 20px;
-            font-size: 22px;
-        }
-
-        ul{
-            list-style: none;
-        }
-
-        li{
-            margin-bottom: 16px;
-
-            font-size: 18px;
-
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        li::before{
-            content: "☐";
-            font-size: 18px;
-            color: #666;
-        }
-/*configuração dos Cards*/
-
-
-        @media(max-width: 768px){
-
-            .container{
-                flex-direction: column;
-            }
-
-            .left,
-            .right{
-                width: 100%;
-            }
-
-        }
-    </style>
+    <title>Meu Perfil - OnLife</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
 
-    <h1>Meu perfil</h1>
-    <h2>Informações do Usuário</h2>
+<body class="d-flex flex-column min-vh-100">
 
-    <div class="container">
-
-        <div class="left">
-             <div class="section-title">
-                Foto de Perfil
-            </div>
-
-            <div class="foto">
-                <img src="assets/images/lucas.jpg" alt="Foto de Perfil">
-            </div>
-
-            <div class="section-title">
-                Nome
-            </div>
-
-            <div class="info-box">
-                Lucas
-            </div>
-
-            <div class="section-title">
-                E-mail
-            </div>
-
-            <div class="info-box">
-                exemplo@gmail.com
-            </div>
-
-            <div class="section-title">
-                Redes Sociais
-            </div>
-
-            <div class="info-box">
-                Instagram: @usuario
-            </div>
-
-            <div class="info-box">
-                Facebook: usuario.fb
-            </div>
-
-            <div class="info-box">
-                X/Twitter: @usuariox
-            </div>
-
-            </div>
-
-        
-
-        <div class="right">
-
-            <div class="card">
-
-                <h3>Seus interesses</h3>
-                <ul>
-
-                    <li>Estudos</li>
-                    <li>Saúde</li>
-                    <li>Fitness</li>
-                    <li>Culinária</li>
-
-                </ul>
-
-            </div>
-
-            <div class="card">
-
-                <h3>Redes sociais que mais usa</h3>
-
-                <ul>
-
-                    <li>Whatsapp</li>
-                    <li>Instagram</li>
-                    <li>Facebook</li>
-                    <li>TikTok</li>
-
-                </ul>
-
-            </div>
-
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 border-bottom border-dark">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <img src="assets/images/logo.png" width="50" height="40" class="me-2 mx-3" alt="Logo OnLife">
+            <span class="fs-2 fw-bold">OnLife</span>
+        </a>
+        <div class="col-md-3 text-end pe-4">
+            <button type="button" class="btn btn-dark px-5">Sair</button>
         </div>
+    </header>
 
-    </div>
+    <main class="d-flex flex-grow-1">
 
+        <aside>
+            <div class="d-flex flex-column flex-shrink-0 p-3 border-end border-dark h-100" style="width: 180px;">
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link link-dark">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link link-dark">Tarefas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link link-dark">Cronômetro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active bg-secondary-subtle text-dark" aria-current="page">Meu Perfil</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="perfil-page">
+
+            <h1>Meu perfil</h1>
+            <h2>Informações do Usuário</h2>
+
+            <div class="perfil-container">
+
+                <!--coluna esquerda-->
+
+                <!--foto-->
+                <div class="left">
+
+                    <div class="section-title">Foto de Perfil</div>
+                    <h6>click na foto para editar</h6>
+                    <div class="foto" onclick="document.getElementById('input-foto').click()" style="cursor: pointer;">
+                    <img id="foto-perfil" src="assets/images/lucas.jpg" alt="Foto de Perfil">
+                    <input type="file" id="input-foto" accept="image/*" style="visibility: hidden; position: absolute;">
+
+                </div>
+                
+                <!--info-->
+                    <div class="section-title">Nome</div>
+                    <div class="info-box" id="campo-nome">@usuario</div>
+
+                    <div class="section-title">E-mail</div>
+                    <div class="info-box" id="campo-email">exemplo@gmail.com</div>
+
+                    <div class="section-title">Redes Sociais</div>
+                    <h6>Instagram</h6>
+                    <div class="info-box" id="campo-instagram">@usuario</div>
+                    <h6>Facebook</h6>
+                    <div class="info-box" id="campo-facebook">@usuario</div>
+                    <h6>X/Twitter</h6>
+                    <div class="info-box" id="campo-twitter">@usuario</div>
+
+                    <button id="btn-editar" class="btn-editar" onclick="ativarEdicao()">Editar</button>
+                    <button id="btn-salvar" class="btn-salvar" onclick="salvarEdicao()" style="display: none;">Salvar</button>
+
+                </div>
+                
+
+                <!--coluna direita-->
+
+                <!--cards-->
+                <div class="right">
+
+                    <div class="card">
+                        <h3>Seus interesses</h3>
+                        <ul id="lista-interesses"></ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>Redes sociais que mais usa</h3>
+                        <ul id="lista-redes"></ul>
+                    </div>
+
+                </div>
+
+                
+
+            </div>
+            
+
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-light py-3 mt-auto px-4">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+            <div>OnLife &copy; 2026. All rights reserved.</div>
+            <div class="footer-icons">
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-linkedin"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>
-</html>
+</html>>

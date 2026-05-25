@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Workspace\\Faculdade\\Primeiro Semestre\\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\\Semana 3 - 09-03 à 15-03 (Estruturas de Seleção; Estrutura de Repetição)\\Exercicio5\\Exercício1.csproj": {}
+    "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Workspace\\Faculdade\\Primeiro Semestre\\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\\Semana 3\\Exercício 5c\\Exercício1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Workspace\\Faculdade\\Primeiro Semestre\\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\\Semana 3 - 09-03 à 15-03 (Estruturas de Seleção; Estrutura de Repetição)\\Exercicio5\\Exercício1.csproj": {
+    "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Workspace\\Faculdade\\Primeiro Semestre\\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\\Semana 3\\Exercício 5c\\Exercício1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Workspace\\Faculdade\\Primeiro Semestre\\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\\Semana 3 - 09-03 à 15-03 (Estruturas de Seleção; Estrutura de Repetição)\\Exercicio5\\Exercício1.csproj",
+        "projectUniqueName": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Workspace\\Faculdade\\Primeiro Semestre\\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\\Semana 3\\Exercício 5c\\Exercício1.csproj",
         "projectName": "Exercício1",
-        "projectPath": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Workspace\\Faculdade\\Primeiro Semestre\\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\\Semana 3 - 09-03 à 15-03 (Estruturas de Seleção; Estrutura de Repetição)\\Exercicio5\\Exercício1.csproj",
+        "projectPath": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Workspace\\Faculdade\\Primeiro Semestre\\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\\Semana 3\\Exercício 5c\\Exercício1.csproj",
         "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Workspace\\Faculdade\\Primeiro Semestre\\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\\Semana 3 - 09-03 à 15-03 (Estruturas de Seleção; Estrutura de Repetição)\\Exercicio5\\obj\\",
+        "outputPath": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Workspace\\Faculdade\\Primeiro Semestre\\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\\Semana 3\\Exercício 5c\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config"

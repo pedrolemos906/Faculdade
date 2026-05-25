@@ -1,0 +1,15 @@
+c:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Primeiro Semestre\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\Semana 10\Exercício 3\bin\Debug\net10.0\Exercício1.exe
+c:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Primeiro Semestre\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\Semana 10\Exercício 3\bin\Debug\net10.0\Exercício1.deps.json
+c:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Primeiro Semestre\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\Semana 10\Exercício 3\bin\Debug\net10.0\Exercício1.runtimeconfig.json
+c:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Primeiro Semestre\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\Semana 10\Exercício 3\bin\Debug\net10.0\Exercício1.dll
+c:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Primeiro Semestre\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\Semana 10\Exercício 3\bin\Debug\net10.0\Exercício1.pdb
+c:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Primeiro Semestre\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\Semana 10\Exercício 3\obj\Debug\net10.0\Exercício1.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Primeiro Semestre\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\Semana 10\Exercício 3\obj\Debug\net10.0\Exercício1.AssemblyInfoInputs.cache
+c:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Primeiro Semestre\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\Semana 10\Exercício 3\obj\Debug\net10.0\Exercício1.AssemblyInfo.cs
+c:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Primeiro Semestre\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\Semana 10\Exercício 3\obj\Debug\net10.0\Exercício1.csproj.CoreCompileInputs.cache
+c:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Primeiro Semestre\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\Semana 10\Exercício 3\obj\Debug\net10.0\Exercício1.sourcelink.json
+c:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Primeiro Semestre\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\Semana 10\Exercício 3\obj\Debug\net10.0\Exercício1.dll
+c:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Primeiro Semestre\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\Semana 10\Exercício 3\obj\Debug\net10.0\refint\Exercício1.dll
+c:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Primeiro Semestre\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\Semana 10\Exercício 3\obj\Debug\net10.0\Exercício1.pdb
+c:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Primeiro Semestre\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\Semana 10\Exercício 3\obj\Debug\net10.0\Exercício1.genruntimeconfig.cache
+c:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Primeiro Semestre\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\Semana 10\Exercício 3\obj\Debug\net10.0\ref\Exercício1.dll

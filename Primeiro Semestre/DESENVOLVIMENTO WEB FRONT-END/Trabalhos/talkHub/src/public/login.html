@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entrar — TalkHub</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- =============================================
+    CABEÇALHO (igual ao index.html)
+  ============================================== -->
+  <header class="cabecalho">
+    <div class="container cabecalho__interno">
+      <a href="index.html">
+        <img src="imagens/logo.svg" alt="TalkHub" height="38" />
+      </a>
+
+      <nav class="menu">
+        <a href="index.html#como-funciona" class="menu__link">como funciona</a>
+        <a href="index.html#idiomas"       class="menu__link">idiomas</a>
+        <a href="register.html" class="botao botao--primario">criar conta</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- =============================================
+    ÁREA DE LOGIN
+    Ocupa toda a altura da tela, formulário
+    centralizado no meio.
+  ============================================== -->
+  <main class="pagina-form">
+    <div class="form-caixa">
+
+      <!-- Logo acima do formulário -->
+      <div class="form-caixa__logo">
+        <img src="imagens/logo.svg" alt="TalkHub" height="44" />
+      </div>
+
+      <h1 class="form-caixa__titulo">Boas-vindas de volta</h1>
+      <p class="form-caixa__subtitulo">Entre na sua conta para encontrar parceiros</p>
+
+      <!-- Formulário de login -->
+      <form class="formulario" action="dashboard.html">
+
+        <!-- Campo e-mail -->
+        <div class="campo">
+          <label class="campo__label" for="email">E-mail</label>
+          <input
+            class="campo__input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="seu@email.com"
+            required
+          />
+        </div>
+
+        <!-- Campo senha -->
+        <div class="campo">
+          <div class="campo__cabecalho">
+            <label class="campo__label" for="senha">Senha</label>
+            <a href="#" class="campo__link">Esqueceu a senha?</a>
+          </div>
+          <input
+            class="campo__input"
+            type="password"
+            id="senha"
+            name="senha"
+            placeholder="••••••••"
+            required
+          />
+        </div>
+
+        <!-- Botão de envio -->
+        <button type="submit" class="botao botao--primario botao--cheio">
+          Entrar
+        </button>
+
+      </form>
+
+      <!-- Link para cadastro -->
+      <p class="form-caixa__rodape">
+        Não tem uma conta?
+        <a href="register.html" class="form-caixa__link">Criar conta grátis</a>
+      </p>
+
+    </div>
+  </main>
+
+
+</body>
+</html>
