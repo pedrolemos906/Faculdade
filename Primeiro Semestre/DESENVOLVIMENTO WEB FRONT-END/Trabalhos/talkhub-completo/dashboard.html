@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meus matches — TalkHub</title>
+  <!-- [1] Bootstrap adicionado -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<!-- [2] body: class "pagina-dashboard" removida, layout agora é d-flex do Bootstrap -->
+<body class="d-flex" style="min-height:100vh;">
+
+
+  <!-- =============================================
+    SIDEBAR
+    [3] Wrappers sidebar__logo e sidebar__perfil
+        removidos — Bootstrap d-flex/gap substituem
+  ============================================== -->
+  <aside class="sidebar d-flex flex-column gap-3">
+
+    <!-- Logo -->
+    <a href="index.html" class="pb-3 border-bottom border-white border-opacity-10">
+      <img src="imagens/logo.svg" alt="TalkHub" height="34" />
+    </a>
+
+    <!-- [4] IDs adicionados para o JS preencher -->
+    <div class="d-flex align-items-center gap-2">
+      <div class="avatar" id="sidebar-avatar"></div>
+      <div>
+        <p class="sidebar__nome mb-0" id="sidebar-nome"></p>
+        <p class="sidebar__idioma mb-0" id="sidebar-idioma"></p>
+      </div>
+    </div>
+
+    <!-- [5] sidebar__menu virou flex-column com mt-2, flex-grow-1 empurra o "Sair" para baixo -->
+    <nav class="d-flex flex-column gap-1 flex-grow-1 mt-2">
+      <a href="dashboard.html" class="sidebar__item sidebar__item--ativo">🤝 Meus matches</a>
+      <a href="#"              class="sidebar__item">📅 Agenda</a>
+      <a href="#"              class="sidebar__item">🎥 Chamadas</a>
+      <a href="#"              class="sidebar__item">⚙️ Configurações</a>
+    </nav>
+
+    <!-- Sair (empurrado para o fim pela flex-grow-1 acima) -->
+    <a href="login.html" class="sidebar__item">🚪 Sair</a>
+
+  </aside>
+
+
+  <!-- =============================================
+    CONTEÚDO PRINCIPAL
+    [6] dashboard-main virou flex-grow-1 p-4 bg-light do Bootstrap
+  ============================================== -->
+  <main class="flex-grow-1 p-4 bg-light">
+
+    <!-- [7] dashboard-header virou d-flex justify-content-between do Bootstrap -->
+    <div class="d-flex justify-content-between align-items-start mb-4">
+      <div>
+        <h1 class="dashboard-header__titulo">Parceiros compatíveis</h1>
+        <p class="dashboard-header__subtitulo">Pessoas com o mesmo idioma e horário disponível</p>
+      </div>
+      <!-- [8] badge virou badge Bootstrap rounded-pill -->
+      <span class="badge bg-primary rounded-pill">3 novos</span>
+    </div>
+
+    <!-- Filtros (sem alteração — classes customizadas) -->
+    <div class="filtros">
+      <button class="filtro filtro--ativo" data-filtro="todos">Todos</button>
+      <button class="filtro" data-filtro="en">🇺🇸 Inglês</button>
+      <button class="filtro" data-filtro="es">🇪🇸 Espanhol</button>
+      <button class="filtro" data-filtro="fr">🇫🇷 Francês</button>
+    </div>
+
+    <!-- [9] Cards hardcodados removidos — JS gera a partir de dados.js -->
+    <div class="lista-matches" id="lista-matches"></div>
+
+  </main>
+
+
+  <!-- =============================================
+    MODAL DE AGENDAMENTO
+    [10] modal-fundo + modal customizado substituídos
+         pelo componente modal do Bootstrap
+  ============================================== -->
+  <div class="modal fade" id="modal-agendamento" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h2 class="modal-title fs-5">Agendar conversa</h2>
+          <!-- [11] botão fechar agora é o padrão do Bootstrap (btn-close) -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+
+          <!-- Perfil do parceiro (preenchido pelo JS) -->
+          <div class="d-flex align-items-center gap-3 p-3 bg-light rounded mb-3">
+            <div class="avatar" id="modal-avatar"></div>
+            <div>
+              <p class="fw-semibold mb-0" id="modal-nome"></p>
+              <p class="text-muted small mb-0" id="modal-idioma"></p>
+            </div>
+          </div>
+
+          <p class="modal__label">Escolha um horário compatível</p>
+          <!-- [12] id="modal-slots" adicionado para o JS renderizar os botões -->
+          <div class="modal__slots" id="modal-slots"></div>
+
+        </div>
+
+        <!-- [13] modal__acoes virou modal-footer do Bootstrap -->
+        <div class="modal-footer">
+          <button class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
+          <button class="btn btn-primary flex-grow-1" onclick="confirmarAgendamento()">
+            🎥 Confirmar e gerar link
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- =============================================
+    MODAL DE CONFIRMAÇÃO
+    [14] Também virou modal Bootstrap
+  ============================================== -->
+  <div class="modal fade" id="modal-confirmacao" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content text-center p-2">
+
+        <div class="modal-body">
+          <div class="confirmacao__icone">✅</div>
+          <h2 class="confirmacao__titulo">Encontro agendado!</h2>
+          <p class="confirmacao__texto text-muted" id="confirmacao-texto"></p>
+
+          <div class="confirmacao__link-box">
+            <span class="confirmacao__link-url" id="confirmacao-link"></span>
+            <button class="confirmacao__copiar" onclick="copiarLink()">Copiar</button>
+          </div>
+
+          <p class="confirmacao__aviso text-muted">O link também foi salvo na sua agenda.</p>
+        </div>
+
+        <div class="modal-footer justify-content-center border-0 pt-0">
+          <button class="btn btn-primary px-5" data-bs-dismiss="modal">
+            Voltar para os matches
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- [15] Bootstrap JS adicionado -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- [16] dados.js carregado ANTES do dashboard.js -->
+  <script src="js/dados.js"></script>
+  <script src="js/dashboard.js"></script>
+
+</body>
+</html>

@@ -1,9 +1,12 @@
 /* ================================================
    TALKHUB — style.css
+   Bootstrap cuida de: grid, forms, navbar, botões base.
+   Este arquivo cuida de: cores, identidade visual,
+   componentes específicos do TalkHub.
 
-   Estrutura espelha o HTML:
+   Estrutura:
    ┌─────────────────────────────┐
-   │  BASE (variáveis e reset)   │
+   │  VARIÁVEIS E OVERRIDES      │
    ├─────────────────────────────┤
    │  <header>  cabeçalho        │
    ├─────────────────────────────┤
@@ -13,38 +16,36 @@
    │            idiomas          │
    │            cta final        │
    ├─────────────────────────────┤
+   │  FORMULÁRIOS (login/cadastro)│
+   ├─────────────────────────────┤
+   │  DASHBOARD                  │
+   ├─────────────────────────────┤
+   │  MODAL                      │
+   ├─────────────────────────────┤
    │  <footer>  rodapé           │
    └─────────────────────────────┘
 ================================================ */
 
 
 /* ================================================
-   BASE
-   Tudo que não pertence a uma seção específica:
-   variáveis globais, reset e classes reutilizáveis.
+   VARIÁVEIS E OVERRIDES DO BOOTSTRAP
+   Redefinimos as cores do Bootstrap para usar
+   a paleta do TalkHub.
 ================================================ */
-
-/* ── Variáveis ──────────────────────────────────
-   Cores e tamanhos do projeto definidos em um
-   lugar só. Para mudar a identidade visual, basta
-   alterar esses valores — o resto se atualiza.
------------------------------------------------- */
 :root {
-  /* Cor principal (roxo TalkHub) */
+  /* Paleta TalkHub */
   --cor-marca:        #534AB7;
   --cor-marca-clara:  #7F77DD;
   --cor-marca-palida: #EEEDFE;
-
-  /* Fundo escuro do cabeçalho e CTA final */
   --cor-escura:       #26215C;
   --cor-escura-meio:  #3C3489;
 
-  /* Cores neutras */
-  --cor-texto:        #18181b;
-  --cor-texto-suave:  #71717a;
-  --cor-fundo:        #ffffff;
-  --cor-fundo-cinza:  #f4f4f5;
-  --cor-borda:        #e4e4e7;
+  /* Neutras */
+  --cor-texto:       #18181b;
+  --cor-texto-suave: #71717a;
+  --cor-fundo:       #ffffff;
+  --cor-fundo-cinza: #f4f4f5;
+  --cor-borda:       #e4e4e7;
 
   /* Tipografia */
   --fonte: 'Segoe UI', system-ui, sans-serif;
@@ -55,148 +56,75 @@
   --espaco-lg: 32px;
   --espaco-xl: 64px;
 
-  /* Bordas arredondadas */
+  /* Bordas */
   --raio:      10px;
   --raio-pill: 999px;
+
+  /* ── Sobrescreve as cores padrão do Bootstrap ── */
+  --bs-primary:       #534AB7;
+  --bs-primary-rgb:   83, 74, 183;
+  --bs-body-font-family: 'Segoe UI', system-ui, sans-serif;
 }
 
-/* ── Reset ──────────────────────────────────────
-   Remove margens e paddings padrão do navegador.
------------------------------------------------- */
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth; /* rolagem suave em links âncora */
-}
-
-body {
-  font-family: var(--fonte);
-  color: var(--cor-texto);
-  background-color: var(--cor-fundo);
-  line-height: 1.6;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-/* ── Reutilizáveis ──────────────────────────────
-   Classes usadas em múltiplas seções da página.
------------------------------------------------- */
-
-/* Limita a largura e centraliza o conteúdo */
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 var(--espaco-lg);
-}
-
-/* Botão base — todas as variantes partem daqui */
-.botao {
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: var(--raio);
-  font-size: 0.9rem;
-  font-weight: 500;
-  cursor: pointer;
-  border: 2px solid transparent;
-  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
-}
-
-.botao--primario {
+/* Botão primário do Bootstrap com cor do TalkHub */
+.btn-primary {
   background-color: var(--cor-marca);
-  color: #ffffff;
+  border-color: var(--cor-marca);
 }
-.botao--primario:hover {
+.btn-primary:hover,
+.btn-primary:focus {
   background-color: var(--cor-escura-meio);
+  border-color: var(--cor-escura-meio);
 }
 
-.botao--contorno {
-  background-color: transparent;
-  border-color: var(--cor-marca-clara);
+/* Botão outline com cor do TalkHub */
+.btn-outline-primary {
   color: var(--cor-marca-clara);
+  border-color: var(--cor-marca-clara);
 }
-.botao--contorno:hover {
+.btn-outline-primary:hover {
   background-color: var(--cor-marca-palida);
   color: var(--cor-marca);
   border-color: var(--cor-marca);
 }
 
-.botao--claro {
-  background-color: var(--cor-marca-clara);
-  color: var(--cor-escura);
-}
-.botao--claro:hover {
-  background-color: #ffffff;
-}
-
-.botao--grande {
-  padding: 13px 28px;
-  font-size: 1rem;
+/* Input com foco na cor da marca */
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--cor-marca);
+  box-shadow: 0 0 0 3px var(--cor-marca-palida);
 }
 
-/* Grids de colunas */
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--espaco-lg);
+/* Utilitário: esconde elemento (usado pelo JS) */
+.oculto {
+  display: none !important;
 }
 
-.grid-2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--espaco-md);
+html {
+  scroll-behavior: smooth;
 }
 
 
 /* ================================================
    <header> CABEÇALHO
-   Barra de navegação fixada no topo da página.
 ================================================ */
 .cabecalho {
-  position: fixed;   /* fica no topo mesmo ao rolar */
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;      /* fica acima de todo o conteúdo */
-  background-color: var(--cor-escura);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: var(--cor-escura) !important;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
-.cabecalho__interno {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 60px;
+/* Cor do ícone hamburguer no mobile */
+.cabecalho .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28127,119,221,1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-
-.logo {
-  color: var(--cor-marca-clara);
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-  gap: var(--espaco-lg);
+.cabecalho .navbar-toggler {
+  border-color: rgba(127,119,221,0.4);
 }
 
 .menu__link {
-  color: var(--cor-marca-clara);
+  color: var(--cor-marca-clara) !important;
   font-size: 0.875rem;
-  opacity: 0.8;
+  opacity: 0.85;
   transition: opacity 0.2s;
 }
 .menu__link:hover {
@@ -206,22 +134,14 @@ img {
 
 /* ================================================
    <body> CONTEÚDO PRINCIPAL
-   Seções na mesma ordem que aparecem no HTML.
 ================================================ */
 
-/* ── Hero ───────────────────────────────────────
-   Primeira coisa que o usuário vê ao abrir a página.
------------------------------------------------- */
+/* ── Hero ── */
 .hero {
-  padding-top: 120px;   /* empurra para baixo do cabeçalho fixo */
+  padding-top: 100px;
   padding-bottom: 80px;
   background-color: var(--cor-escura);
   text-align: center;
-}
-
-.hero__conteudo {
-  max-width: 680px;
-  margin: 0 auto;
 }
 
 .hero__etiqueta {
@@ -253,17 +173,7 @@ img {
   line-height: 1.7;
 }
 
-.hero__botoes {
-  display: flex;
-  gap: var(--espaco-md);
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/* ── Seções genéricas ───────────────────────────
-   Estilo base compartilhado entre recursos,
-   como funciona e idiomas.
------------------------------------------------- */
+/* ── Seções genéricas ── */
 .secao {
   padding: var(--espaco-xl) 0;
 }
@@ -287,23 +197,22 @@ img {
   margin-bottom: var(--espaco-lg);
 }
 
-/* ── Recursos (cards) ───────────────────────────
-   Três cards explicando as funcionalidades.
------------------------------------------------- */
-.card {
-  background-color: var(--cor-fundo);
+/* ── Cards de recursos ── */
+.card-recurso {
   border: 1px solid var(--cor-borda);
   border-radius: var(--raio);
   padding: var(--espaco-lg);
   text-align: center;
+  height: 100%;
   transition: box-shadow 0.2s;
+  background-color: var(--cor-fundo);
 }
-.card:hover {
-  box-shadow: 0 4px 20px rgba(83, 74, 183, 0.1);
+.card-recurso:hover {
+  box-shadow: 0 4px 20px rgba(83,74,183,0.1);
 }
 
-.card__icone {
-  font-size: 2rem;
+.card-recurso__icone {
+  font-size: 1.8rem;
   margin-bottom: var(--espaco-md);
   display: inline-flex;
   align-items: center;
@@ -314,21 +223,19 @@ img {
   border-radius: var(--raio);
 }
 
-.card__titulo {
+.card-recurso__titulo {
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: var(--espaco-sm);
 }
 
-.card__texto {
+.card-recurso__texto {
   font-size: 0.875rem;
   color: var(--cor-texto-suave);
   line-height: 1.7;
 }
 
-/* ── Como funciona (passos) ─────────────────────
-   Quatro cards em grid 2x2 com número + texto.
------------------------------------------------- */
+/* ── Como funciona (passos) ── */
 .passo {
   background-color: var(--cor-fundo);
   border: 1px solid var(--cor-borda);
@@ -337,6 +244,7 @@ img {
   display: flex;
   gap: var(--espaco-md);
   align-items: flex-start;
+  height: 100%;
 }
 
 .passo__numero {
@@ -359,9 +267,7 @@ img {
   line-height: 1.6;
 }
 
-/* ── Idiomas ────────────────────────────────────
-   Lista de pills com bandeira + nome do idioma.
------------------------------------------------- */
+/* ── Idiomas ── */
 .lista-idiomas {
   display: flex;
   flex-wrap: wrap;
@@ -378,20 +284,13 @@ img {
   border-radius: var(--raio-pill);
   background-color: var(--cor-fundo-cinza);
   font-size: 0.875rem;
-  color: var(--cor-texto);
 }
 
-/* ── CTA final ──────────────────────────────────
-   Chamada para ação antes do rodapé.
------------------------------------------------- */
+/* ── CTA final ── */
 .cta-final {
   background-color: var(--cor-escura);
   padding: var(--espaco-xl) 0;
-}
-
-.cta-final__conteudo {
   text-align: center;
-  max-width: 560px;
 }
 
 .cta-final__titulo {
@@ -411,47 +310,28 @@ img {
 
 
 /* ================================================
-   <footer> RODAPÉ
+   FORMULÁRIOS — login.html e register.html
 ================================================ */
-.rodape {
-  padding: var(--espaco-lg) 0;
-  border-top: 1px solid var(--cor-borda);
-  text-align: center;
-  font-size: 0.8rem;
-  color: var(--cor-texto-suave);
-}
-
-
-/* ================================================
-   PÁGINAS DE FORMULÁRIO
-   Usada no login.html e futuramente no register.html.
-   Um único bloco de estilos serve para ambas as páginas.
-================================================ */
-
-/* ── Área que ocupa a tela toda ─────────────────
-   Centraliza a caixa do formulário
-   vertical e horizontalmente.
------------------------------------------------- */
 .pagina-form {
-  min-height: 100vh;         /* ocupa a altura inteira da tela */
+  min-height: 100vh;
   display: flex;
-  align-items: center;       /* centraliza na vertical */
-  justify-content: center;   /* centraliza na horizontal */
+  align-items: center;
+  justify-content: center;
   background-color: var(--cor-fundo-cinza);
-  padding: 80px var(--espaco-md) var(--espaco-md);
-                             /* 80px no topo por causa do cabeçalho fixo */
+  padding: 80px 16px 16px;
 }
 
-/* ── Caixa branca do formulário ─────────────────
-   O card que contém logo, título e campos.
------------------------------------------------- */
 .form-caixa {
   background-color: var(--cor-fundo);
   border: 1px solid var(--cor-borda);
   border-radius: var(--raio);
   padding: var(--espaco-lg);
   width: 100%;
-  max-width: 420px;          /* nunca fica largo demais */
+  max-width: 420px;
+}
+
+.form-caixa--larga {
+  max-width: 580px;
 }
 
 .form-caixa__logo {
@@ -474,79 +354,6 @@ img {
   margin-bottom: var(--espaco-lg);
 }
 
-/* ── Formulário ─────────────────────────────────
-   Campos empilhados com espaço entre eles.
------------------------------------------------- */
-.formulario {
-  display: flex;
-  flex-direction: column;
-  gap: var(--espaco-md);
-}
-
-/* ── Campo individual ───────────────────────────
-   Label + input agrupados.
------------------------------------------------- */
-.campo {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-/* Linha com label e link lado a lado (ex: "Senha" + "Esqueceu?") */
-.campo__cabecalho {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.campo__label {
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: var(--cor-texto);
-}
-
-.campo__link {
-  font-size: 0.8rem;
-  color: var(--cor-marca);
-}
-.campo__link:hover {
-  text-decoration: underline;
-}
-
-.campo__input {
-  height: 42px;
-  padding: 0 12px;
-  border: 1px solid var(--cor-borda);
-  border-radius: var(--raio);
-  font-size: 0.9rem;
-  font-family: var(--fonte);
-  color: var(--cor-texto);
-  background-color: var(--cor-fundo);
-  transition: border-color 0.2s, box-shadow 0.2s;
-  outline: none;
-}
-
-/* Destaca o campo quando o usuário clica nele */
-.campo__input:focus {
-  border-color: var(--cor-marca);
-  box-shadow: 0 0 0 3px var(--cor-marca-palida);
-}
-
-/* ── Botão cheio (largura total) ────────────────
-   Usado dentro do formulário para ocupar
-   toda a largura da caixa.
------------------------------------------------- */
-.botao--cheio {
-  width: 100%;
-  text-align: center;
-  padding: 12px;
-  font-size: 1rem;
-  margin-top: var(--espaco-sm);
-}
-
-/* ── Rodapé da caixa ────────────────────────────
-   Texto com link para criar conta.
------------------------------------------------- */
 .form-caixa__rodape {
   margin-top: var(--espaco-md);
   text-align: center;
@@ -557,32 +364,28 @@ img {
 .form-caixa__link {
   color: var(--cor-marca);
   font-weight: 500;
+  text-decoration: none;
 }
 .form-caixa__link:hover {
   text-decoration: underline;
 }
 
-
-/* ================================================
-   CADASTRO — register.html
-   Estilos específicos do formulário de 2 passos.
-================================================ */
-
-/* ── Caixa mais larga (passo 2 precisa de espaço) */
-.form-caixa--larga {
-  max-width: 580px;
+.campo__link {
+  font-size: 0.8rem;
+  color: var(--cor-marca);
+  text-decoration: none;
+}
+.campo__link:hover {
+  text-decoration: underline;
 }
 
-/* ── Utilitário: esconde um elemento ────────────
-   Usado pelo JavaScript para alternar os passos.
------------------------------------------------- */
-.oculto {
-  display: none;
+.campo__dica {
+  font-size: 0.8rem;
+  color: var(--cor-texto-suave);
+  margin-bottom: 10px;
 }
 
-/* ── Indicador de progresso ─────────────────────
-   Mostra "1 — Seus dados  ——  2 — Preferências"
------------------------------------------------- */
+/* ── Indicador de progresso ── */
 .progresso {
   display: flex;
   align-items: center;
@@ -594,11 +397,10 @@ img {
   display: flex;
   align-items: center;
   gap: 8px;
-  opacity: 0.4;               /* apagado por padrão */
+  opacity: 0.4;
   transition: opacity 0.3s;
 }
 
-/* Passo ativo fica com opacidade total */
 .progresso__passo--ativo {
   opacity: 1;
 }
@@ -624,37 +426,21 @@ img {
 .progresso__texto {
   font-size: 0.875rem;
   font-weight: 500;
-  color: var(--cor-texto);
 }
 
-/* Linha que conecta os dois passos */
 .progresso__linha {
   flex: 1;
   height: 1px;
   background-color: var(--cor-borda);
 }
 
-/* ── Dica abaixo do label ───────────────────────*/
-.campo__dica {
-  font-size: 0.8rem;
-  color: var(--cor-texto-suave);
-  margin-top: -2px;
-  margin-bottom: 10px;
-}
-
-/* ── Chips de idioma ────────────────────────────
-   O <input> fica escondido.
-   O <label> tem a aparência de pill clicável.
-   Quando o checkbox está marcado (:checked),
-   o CSS seleciona o label seguinte e o colore.
------------------------------------------------- */
+/* ── Chips de idioma ── */
 .chips {
   display: flex;
   flex-wrap: wrap;
   gap: var(--espaco-sm);
 }
 
-/* Esconde o input mas mantém funcionando */
 .chip__input {
   display: none;
 }
@@ -666,17 +452,15 @@ img {
   padding: 7px 16px;
   border: 1.5px solid var(--cor-borda);
   border-radius: var(--raio-pill);
-  background-color: var(--cor-fundo);
   font-size: 0.875rem;
   cursor: pointer;
-  transition: border-color 0.15s, background-color 0.15s, color 0.15s;
+  transition: all 0.15s;
 }
 
 .chip:hover {
   border-color: var(--cor-marca-clara);
 }
 
-/* Quando o checkbox está marcado, colore o label */
 .chip__input:checked + .chip {
   background-color: var(--cor-marca-palida);
   border-color: var(--cor-marca);
@@ -684,32 +468,23 @@ img {
   font-weight: 500;
 }
 
-/* ── Grade de disponibilidade ───────────────────
-   Cada linha = dia da semana
-   Cada coluna = período (manhã, tarde, noite...)
-   Mesmo truque dos chips: input escondido + label clicável.
------------------------------------------------- */
+/* ── Grade de disponibilidade ── */
 .grade-disponibilidade {
   border: 1px solid var(--cor-borda);
   border-radius: var(--raio);
-  overflow: hidden;           /* arredonda as bordas internas */
-  margin-top: 4px;
+  overflow: hidden;
 }
 
-/* Cabeçalho e linhas usam grid de 5 colunas:
-   1 para o dia + 4 para os períodos */
 .grade__cabecalho,
 .grade__linha {
   display: grid;
   grid-template-columns: 60px repeat(4, 1fr);
 }
 
-/* Separador entre as linhas */
 .grade__linha {
   border-top: 1px solid var(--cor-borda);
 }
 
-/* Célula base */
 .grade__celula {
   padding: 10px 6px;
   font-size: 0.8rem;
@@ -717,35 +492,29 @@ img {
   line-height: 1.4;
 }
 
-/* Célula vazia (canto superior esquerdo) */
-.grade__celula--vazia {
+.grade__celula--vazia,
+.grade__celula--titulo,
+.grade__celula--dia {
   background-color: var(--cor-fundo-cinza);
 }
 
-/* Título de coluna (Manhã, Tarde...) */
 .grade__celula--titulo {
-  background-color: var(--cor-fundo-cinza);
   font-weight: 500;
   color: var(--cor-texto-suave);
   border-left: 1px solid var(--cor-borda);
 }
 
-/* Nome do dia (Seg, Ter...) */
 .grade__celula--dia {
   font-weight: 500;
-  color: var(--cor-texto);
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--cor-fundo-cinza);
 }
 
-/* Input escondido */
 .grade__input {
   display: none;
 }
 
-/* Slot clicável */
 .grade__slot {
   cursor: pointer;
   border-left: 1px solid var(--cor-borda);
@@ -756,13 +525,10 @@ img {
   background-color: var(--cor-marca-palida);
 }
 
-/* Slot marcado */
 .grade__input:checked + .grade__slot {
   background-color: var(--cor-marca-palida);
-  border-color: var(--cor-marca-palida);
 }
 
-/* Ícone de check no slot marcado */
 .grade__input:checked + .grade__slot::after {
   content: '✓';
   font-size: 0.85rem;
@@ -770,9 +536,6 @@ img {
   font-weight: 600;
 }
 
-/* ── Rodapé do formulário do passo 2 ────────────
-   Botões "Voltar" e "Criar conta" lado a lado.
------------------------------------------------- */
 .formulario__rodape {
   display: flex;
   gap: var(--espaco-md);
@@ -780,35 +543,43 @@ img {
 }
 
 .formulario__btn-finalizar {
-  flex: 1;                    /* ocupa o espaço restante */
-  text-align: center;
-  padding: 12px;
+  flex: 1;
 }
 
 
 /* ================================================
    DASHBOARD — dashboard.html
-   Layout com sidebar fixa + área de conteúdo.
 ================================================ */
-
-/* ── Layout geral ───────────────────────────────
-   O body vira um grid de 2 colunas:
-   sidebar | conteúdo principal
------------------------------------------------- */
 .pagina-dashboard {
   display: grid;
   grid-template-columns: 240px 1fr;
   min-height: 100vh;
 }
 
-/* ── Sidebar ────────────────────────────────────*/
+/* Em telas pequenas, sidebar some e o conteúdo ocupa tudo */
+@media (max-width: 768px) {
+  .pagina-dashboard {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    display: none;
+  }
+  .navbar-mobile {
+    display: flex !important;
+  }
+}
+
+.navbar-mobile {
+  display: none;
+}
+
 .sidebar {
   background-color: var(--cor-escura);
   padding: var(--espaco-lg) var(--espaco-md);
   display: flex;
   flex-direction: column;
   gap: var(--espaco-lg);
-  position: sticky;       /* fica fixo ao rolar o conteúdo */
+  position: sticky;
   top: 0;
   height: 100vh;
 }
@@ -841,7 +612,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  flex: 1;           /* empurra o botão "sair" para o fim */
+  flex: 1;
 }
 
 .sidebar__item {
@@ -862,21 +633,16 @@ img {
   background-color: rgba(255,255,255,0.06);
 }
 
-/* Item ativo (página atual) */
 .sidebar__item--ativo {
   opacity: 1;
-  background-color: rgba(127, 119, 221, 0.2);
-  color: var(--cor-marca-clara);
+  background-color: rgba(127,119,221,0.2);
 }
 
 .sidebar__icone {
   font-size: 1rem;
 }
 
-/* ── Avatar ─────────────────────────────────────
-   Círculo colorido com as iniciais do usuário.
-   Variantes de cor para diferenciar os parceiros.
------------------------------------------------- */
+/* ── Avatar ── */
 .avatar {
   width: 40px;
   height: 40px;
@@ -894,7 +660,7 @@ img {
 .avatar--laranja{ background-color: #FEF3C7; color: #92400E; }
 .avatar--azul   { background-color: #DBEAFE; color: #1E40AF; }
 
-/* ── Conteúdo principal ─────────────────────────*/
+/* ── Conteúdo principal ── */
 .dashboard-main {
   padding: var(--espaco-lg);
   background-color: var(--cor-fundo-cinza);
@@ -919,8 +685,7 @@ img {
   margin-top: 4px;
 }
 
-/* Badge de notificação */
-.badge {
+.badge-talkhub {
   background-color: var(--cor-marca);
   color: #ffffff;
   font-size: 0.75rem;
@@ -930,7 +695,7 @@ img {
   white-space: nowrap;
 }
 
-/* ── Filtros ────────────────────────────────────*/
+/* ── Filtros ── */
 .filtros {
   display: flex;
   gap: var(--espaco-sm);
@@ -961,7 +726,7 @@ img {
   font-weight: 500;
 }
 
-/* ── Cards de match ─────────────────────────────*/
+/* ── Cards de match ── */
 .lista-matches {
   display: flex;
   flex-direction: column;
@@ -976,15 +741,17 @@ img {
   display: flex;
   align-items: center;
   gap: var(--espaco-md);
+  flex-wrap: wrap;
   transition: box-shadow 0.2s;
 }
 
 .match-card:hover {
-  box-shadow: 0 2px 12px rgba(83, 74, 183, 0.1);
+  box-shadow: 0 2px 12px rgba(83,74,183,0.1);
 }
 
 .match-card__info {
-  flex: 1;      /* ocupa o espaço disponível, empurra os outros para as bordas */
+  flex: 1;
+  min-width: 160px;
 }
 
 .match-card__nome {
@@ -1015,11 +782,9 @@ img {
 /* ================================================
    MODAL DE AGENDAMENTO
 ================================================ */
-
-/* Fundo escurecido atrás do modal */
 .modal-fundo {
   position: fixed;
-  inset: 0;                     /* cobre a tela toda */
+  inset: 0;
   background-color: rgba(0,0,0,0.45);
   display: flex;
   align-items: center;
@@ -1055,10 +820,6 @@ img {
   font-size: 1rem;
   color: var(--cor-texto-suave);
   cursor: pointer;
-  padding: 4px;
-}
-.modal__fechar:hover {
-  color: var(--cor-texto);
 }
 
 .modal__perfil {
@@ -1071,24 +832,10 @@ img {
   margin-bottom: var(--espaco-md);
 }
 
-.modal__nome {
-  font-weight: 600;
-  font-size: 0.95rem;
-}
+.modal__nome   { font-weight: 600; font-size: 0.95rem; }
+.modal__idioma { font-size: 0.8rem; color: var(--cor-texto-suave); margin-top: 2px; }
+.modal__label  { font-size: 0.875rem; font-weight: 500; margin-bottom: var(--espaco-sm); }
 
-.modal__idioma {
-  font-size: 0.8rem;
-  color: var(--cor-texto-suave);
-  margin-top: 2px;
-}
-
-.modal__label {
-  font-size: 0.875rem;
-  font-weight: 500;
-  margin-bottom: var(--espaco-sm);
-}
-
-/* Grade de slots de horário */
 .modal__slots {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1106,24 +853,9 @@ img {
   transition: all 0.15s;
 }
 
-.slot:hover {
-  border-color: var(--cor-marca);
-  color: var(--cor-marca);
-}
-
-.slot--destaque {
-  background-color: var(--cor-marca);
-  border-color: var(--cor-marca);
-  color: #ffffff;
-  font-weight: 500;
-}
-
-.slot--selecionado {
-  background-color: var(--cor-marca-palida);
-  border-color: var(--cor-marca);
-  color: var(--cor-marca);
-  font-weight: 500;
-}
+.slot:hover         { border-color: var(--cor-marca); color: var(--cor-marca); }
+.slot--destaque     { background-color: var(--cor-marca); border-color: var(--cor-marca); color: #fff; font-weight: 500; }
+.slot--selecionado  { background-color: var(--cor-marca-palida); border-color: var(--cor-marca); color: var(--cor-marca); font-weight: 500; }
 
 .modal__acoes {
   display: flex;
@@ -1136,27 +868,11 @@ img {
   padding: 10px;
 }
 
-/* ── Tela de confirmação ────────────────────────*/
-.modal--confirmacao {
-  text-align: center;
-}
-
-.confirmacao__icone {
-  font-size: 2.5rem;
-  margin-bottom: var(--espaco-md);
-}
-
-.confirmacao__titulo {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: var(--espaco-sm);
-}
-
-.confirmacao__texto {
-  font-size: 0.875rem;
-  color: var(--cor-texto-suave);
-  margin-bottom: var(--espaco-md);
-}
+/* ── Confirmação ── */
+.modal--confirmacao { text-align: center; }
+.confirmacao__icone  { font-size: 2.5rem; margin-bottom: var(--espaco-md); }
+.confirmacao__titulo { font-size: 1.2rem; font-weight: 600; margin-bottom: var(--espaco-sm); }
+.confirmacao__texto  { font-size: 0.875rem; color: var(--cor-texto-suave); margin-bottom: var(--espaco-md); }
 
 .confirmacao__link-box {
   display: flex;
@@ -1187,13 +903,17 @@ img {
   cursor: pointer;
   white-space: nowrap;
 }
-.confirmacao__copiar:hover {
-  border-color: var(--cor-marca);
-  color: var(--cor-marca);
-}
+.confirmacao__copiar:hover { border-color: var(--cor-marca); color: var(--cor-marca); }
+.confirmacao__aviso { font-size: 0.8rem; color: var(--cor-texto-suave); margin-bottom: var(--espaco-lg); }
 
-.confirmacao__aviso {
+
+/* ================================================
+   <footer> RODAPÉ
+================================================ */
+.rodape {
+  padding: var(--espaco-lg) 0;
+  border-top: 1px solid var(--cor-borda);
+  text-align: center;
   font-size: 0.8rem;
   color: var(--cor-texto-suave);
-  margin-bottom: var(--espaco-lg);
 }

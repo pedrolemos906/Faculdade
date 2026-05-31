@@ -120,16 +120,16 @@ botoesFiltro.forEach(function (botao) {
 // 4. MODAL DE AGENDAMENTO
 // ════════════════════════════════════════════════
 
-const modalFundo = document.getElementById('modal-fundo');
+// Instância do modal Bootstrap — reutilizada em toda abertura
+const modalBS = new bootstrap.Modal(document.getElementById('modal-agendamento'));
 
 // Abre o modal para o parceiro com o id informado
 function abrirModal(parceiroId) {
 
   // Encontra o parceiro no array pelo id
-  // .find percorre o array e retorna o primeiro que satisfaz a condição
   const parceiro = parceiros.find(function (p) { return p.id === parceiroId; });
 
-  if (!parceiro) return; // segurança: não faz nada se não encontrar
+  if (!parceiro) return;
 
   // Preenche o modal com os dados do parceiro
   document.getElementById('modal-nome').textContent   = parceiro.nome;
@@ -141,13 +141,12 @@ function abrirModal(parceiroId) {
   avatarEl.className   = 'avatar ' + parceiro.corAvatar;
 
   // Guarda o id do parceiro no modal para usar ao confirmar
-  modalFundo.dataset.parceiroId = parceiroId;
+  document.getElementById('modal-agendamento').dataset.parceiroId = parceiroId;
 
-  // Gera os slots de horário
   renderizarSlots();
 
-  // Exibe o modal
-  modalFundo.classList.remove('oculto');
+  // Abre com a API do Bootstrap
+  modalBS.show();
 }
 
 
@@ -175,13 +174,8 @@ function renderizarSlots() {
 }
 
 
-// Fecha o modal ao clicar no fundo escuro
-modalFundo.addEventListener('click', function (evento) {
-  if (evento.target === modalFundo) fecharModal();
-});
-
 function fecharModal() {
-  modalFundo.classList.add('oculto');
+  modalBS.hide();
 }
 
 
@@ -189,7 +183,7 @@ function fecharModal() {
 // 5. CONFIRMAÇÃO E GERAÇÃO DO LINK
 // ════════════════════════════════════════════════
 
-const confirmacaoFundo = document.getElementById('confirmacao-fundo');
+const confirmacaoBS = new bootstrap.Modal(document.getElementById('modal-confirmacao'));
 
 function confirmarAgendamento() {
 
@@ -213,12 +207,12 @@ function confirmarAgendamento() {
   document.getElementById('confirmacao-link').textContent = link;
 
   fecharModal();
-  confirmacaoFundo.classList.remove('oculto');
+  confirmacaoBS.show();
 }
 
 
 function fecharConfirmacao() {
-  confirmacaoFundo.classList.add('oculto');
+  confirmacaoBS.hide();
 }
 
 
