@@ -1,0 +1,529 @@
+faça a pagina completa
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Placar</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <style>
+
+        /* RESET */
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+
+            background-color: #f2f2f2;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            color: #333;
+        }
+
+        /* HEADER */
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 15px 25px;
+
+            border-bottom: 1px solid #222;
+
+            background-color: white;
+        }
+
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-img{
+            width: 70px;
+            height: 40px;
+
+            background-color: #d9d9d9;
+        }
+
+        .logo h1{
+            font-size: 42px;
+            font-weight: bold;
+        }
+
+        .btn-sair{
+            background-color: #222;
+            color: white;
+
+            border: none;
+
+            padding: 10px 40px;
+
+            border-radius: 5px;
+
+            font-weight: bold;
+        }
+
+        /* LAYOUT */
+
+        .layout{
+            flex: 1;
+
+            display: flex;
+        }
+
+        /* SIDEBAR */
+
+        .sidebar{
+            width: 180px;
+
+            border-right: 1px solid #222;
+
+            padding: 15px;
+
+            background-color: white;
+        }
+
+        .menu{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .menu button{
+            border: 1px solid #999;
+
+            background-color: #d9d9d9;
+
+            padding: 10px;
+
+            border-radius: 5px;
+
+            font-weight: bold;
+        }
+
+        /* CONTEÚDO */
+
+        .placar-page{
+            width: 100%;
+
+            padding: 25px 40px;
+        }
+
+        .placar-header{
+            margin-bottom: 40px;
+        }
+
+        .placar-header h1{
+            font-size: 42px;
+            margin-bottom: 5px;
+        }
+
+        .placar-header h2{
+            font-size: 22px;
+            color: #777;
+            font-weight: normal;
+        }
+
+        /* PODIUM */
+
+        .podium-container{
+            display: flex;
+
+            justify-content: center;
+            align-items: end;
+
+            gap: 40px;
+
+            margin-bottom: 60px;
+        }
+
+        .podium-user{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .podium-foto{
+            border-radius: 50%;
+            background-color: #d9d9d9;
+        }
+
+        .first-place .podium-foto{
+            width: 120px;
+            height: 120px;
+        }
+
+        .second-place .podium-foto,
+        .third-place .podium-foto{
+            width: 90px;
+            height: 90px;
+        }
+
+        .podium-user h3{
+            margin-top: 15px;
+            margin-bottom: 5px;
+
+            font-size: 24px;
+        }
+
+        .pontuacao{
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .podium-posicao{
+            width: 110px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border: 1px solid #999;
+            border-radius: 5px;
+
+            background-color: #d9d9d9;
+
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .first-place .podium-posicao{
+            height: 120px;
+        }
+
+        .second-place .podium-posicao{
+            height: 90px;
+        }
+
+        .third-place .podium-posicao{
+            height: 70px;
+        }
+
+        /* RANKING */
+
+        .ranking-container h2{
+            margin-bottom: 25px;
+
+            color: #777;
+
+            font-size: 36px;
+
+            font-weight: normal;
+        }
+
+        .ranking-list{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .ranking-item{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            background-color: #d9d9d9;
+
+            border: 1px solid #999;
+            border-radius: 5px;
+
+            padding: 15px 25px;
+
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .ranking-posicao{
+            width: 80px;
+        }
+
+        .ranking-pontos{
+            width: 120px;
+            text-align: right;
+        }
+
+        /* FOOTER */
+
+        footer{
+            background-color: #222;
+
+            color: white;
+
+            padding: 20px 30px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-icons{
+            display: flex;
+            gap: 15px;
+
+            font-size: 18px;
+        }
+
+        /* RESPONSIVIDADE */
+
+        @media(max-width: 900px){
+
+            .layout{
+                flex-direction: column;
+            }
+
+            .sidebar{
+                width: 100%;
+
+                border-right: none;
+                border-bottom: 1px solid #222;
+            }
+
+            .menu{
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .podium-container{
+                flex-direction: column;
+
+                align-items: center;
+            }
+
+            .ranking-item{
+                font-size: 18px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+
+            <div class="logo-img"></div>
+
+            <h1>OnLife</h1>
+
+        </div>
+
+        <button class="btn-sair">
+            Sair
+        </button>
+
+    </header>
+
+    <!-- LAYOUT -->
+
+    <div class="layout">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="menu">
+
+                <button>Dashboard</button>
+
+                <button>Tarefas</button>
+
+                <button>Cronômetro</button>
+
+                <button>Meu Perfil</button>
+
+                <button>Placar</button>
+
+            </div>
+
+        </aside>
+
+        <!-- CONTEÚDO -->
+
+        <main class="placar-page">
+
+            <!-- TÍTULO -->
+
+            <div class="placar-header">
+
+                <h1>Placar</h1>
+
+                <h2>Ranking do Grupo</h2>
+
+            </div>
+
+            <!-- PODIUM -->
+
+            <section class="podium-container">
+
+                <!-- 2º -->
+
+                <div class="podium-user second-place">
+
+                    <div class="podium-foto"></div>
+
+                    <h3>Lucas</h3>
+
+                    <span class="pontuacao">
+                        220 pts
+                    </span>
+
+                    <div class="podium-posicao">
+                        2º
+                    </div>
+
+                </div>
+
+                <!-- 1º -->
+
+                <div class="podium-user first-place">
+
+                    <div class="podium-foto"></div>
+
+                    <h3>Mariana</h3>
+
+                    <span class="pontuacao">
+                        260 pts
+                    </span>
+
+                    <div class="podium-posicao">
+                        1º
+                    </div>
+
+                </div>
+
+                <!-- 3º -->
+
+                <div class="podium-user third-place">
+
+                    <div class="podium-foto"></div>
+
+                    <h3>Juliana</h3>
+
+                    <span class="pontuacao">
+                        200 pts
+                    </span>
+
+                    <div class="podium-posicao">
+                        3º
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- RANKING -->
+
+            <section class="ranking-container">
+
+                <h2>Classificação Completa</h2>
+
+                <div class="ranking-list">
+
+                    <div class="ranking-item">
+
+                        <span class="ranking-posicao">
+                            1º
+                        </span>
+
+                        <span class="ranking-nome">
+                            Mariana
+                        </span>
+
+                        <span class="ranking-pontos">
+                            260 pts
+                        </span>
+
+                    </div>
+
+                    <div class="ranking-item">
+
+                        <span class="ranking-posicao">
+                            2º
+                        </span>
+
+                        <span class="ranking-nome">
+                            Lucas
+                        </span>
+
+                        <span class="ranking-pontos">
+                            220 pts
+                        </span>
+
+                    </div>
+
+                    <div class="ranking-item">
+
+                        <span class="ranking-posicao">
+                            3º
+                        </span>
+
+                        <span class="ranking-nome">
+                            Juliana
+                        </span>
+
+                        <span class="ranking-pontos">
+                            200 pts
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <span>
+            OnLife @ 2026. All rights reserved.
+        </span>
+
+        <div class="footer-icons">
+
+            <i class="bi bi-youtube"></i>
+
+            <i class="bi bi-facebook"></i>
+
+            <i class="bi bi-twitter"></i>
+
+            <i class="bi bi-instagram"></i>
+
+            <i class="bi bi-linkedin"></i>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
