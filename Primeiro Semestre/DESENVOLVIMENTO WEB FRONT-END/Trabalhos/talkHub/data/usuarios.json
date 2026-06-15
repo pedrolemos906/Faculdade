@@ -1,0 +1,26 @@
+[
+    {
+        "nome": "Pedro",
+        "idioma": "Inglês",
+        "nivel": "Intermediário",
+        "disponibilidade": "Noite",
+        "contato": "pedro@email.com",
+        "interesses": "Tecnologia e Games"
+    },
+    {
+        "nome": "Ana",
+        "idioma": "Francês",
+        "nivel": "Básico",
+        "disponibilidade": "Tarde",
+        "contato": "ana@email.com",
+        "interesses": "Viagens e Cultura"
+    },
+    {
+        "nome": "Carlos",
+        "idioma": "Espanhol",
+        "nivel": "Avançado",
+        "disponibilidade": "Manhã",
+        "contato": "carlos@email.com",
+        "interesses": "Música"
+    }
+]

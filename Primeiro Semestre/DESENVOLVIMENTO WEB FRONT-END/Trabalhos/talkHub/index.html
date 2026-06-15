@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalkHub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+
+        <div class="logo">
+            <img src="assets/logo.svg" alt="TalkHub">
+        </div>
+
+        <nav>
+
+            <a href="#como-funciona">Sobre</a>
+
+            <a href="#mural">Mural</a>
+
+            <a href="cadastro.html" class="btn">Criar Anúncio</a>
+
+        </nav>
+
+    </header>
+
+    <section
+        class="hero"
+        id="sobre"
+    >
+
+        <h1>
+            Conecte-se e pratique idiomas
+            com pessoas reais
+        </h1>
+
+        <p>
+
+            Encontre parceiros para praticar
+            inglês, espanhol e francês.
+
+            Compartilhe seus interesses,
+            descubra novas culturas e
+            desenvolva sua fluência.
+
+        </p>
+
+        <a
+            href="cadastro.html"
+            class="btn"
+        >
+            Encontrar Parceiros
+        </a>
+
+    </section>
+
+    
+
+    <section class="mural" id="mural">
+
+        <h2>Mural de Conversação</h2>
+
+        <div class="filtros">
+
+            <button class="filtro-btn" data-idioma="Todos">
+                Todos
+            </button>
+
+            <button class="filtro-btn" data-idioma="Inglês">
+                🇬🇧 Inglês
+            </button>
+
+            <button class="filtro-btn" data-idioma="Espanhol">
+                🇪🇸 Espanhol
+            </button>
+
+            <button class="filtro-btn" data-idioma="Francês">
+                🇫🇷 Francês
+            </button>
+
+        </div>
+
+        <div id="cards-container"></div>
+
+    </section>
+
+    <section class="como-funciona" id="como-funciona">
+
+        <h2>
+            Como Funciona
+        </h2>
+
+        <div class="passos">
+
+            <div class="passo">
+
+                <h3>1</h3>
+
+                <p>
+                    Crie seu anúncio.
+                </p>
+
+            </div>
+
+            <div class="passo">
+
+                <h3>2</h3>
+
+                <p>
+                    Informe idiomas,
+                    interesses e contato.
+                </p>
+
+            </div>
+
+            <div class="passo">
+
+                <h3>3</h3>
+
+                <p>
+                    Encontre pessoas com
+                    objetivos semelhantes.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>
+
+            TalkHub © 2026
+
+            Projeto acadêmico para
+            conexão entre estudantes
+            de idiomas.
+
+        </p>
+
+    </footer>
+
+    <script src="js/card.js"></script>
+    <script src="js/home.js"></script>
+
+</body>
+</html>

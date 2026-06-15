@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Anúncio - TalkHub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>TalkHub</h1>
+    </header>
+
+    <section class="form-section">
+
+        <h2>Criar Anúncio</h2>
+
+        <form id="formulario">
+
+            <input
+                type="text"
+                id="nome"
+                placeholder="Seu nome"
+                required
+            >
+
+            <select id="idioma">
+
+                <option>Inglês</option>
+                <option>Espanhol</option>
+                <option>Francês</option>
+
+            </select>
+
+            <select id="nivel">
+
+                <option>Básico</option>
+                <option>Intermediário</option>
+                <option>Avançado</option>
+
+            </select>
+
+            <input
+                type="text"
+                id="disponibilidade"
+                placeholder="Disponibilidade"
+                required
+            >
+
+            <input
+                type="text"
+                id="contato"
+                placeholder="Contato"
+                required
+            >
+
+            <textarea
+                id="interesses"
+                placeholder="Interesses"
+            ></textarea>
+
+            <button type="submit">
+                Gerar Card
+            </button>
+
+        </form>
+
+    </section>
+
+    <script src="js/cadastro.js"></script>
+
+</body>
+</html>

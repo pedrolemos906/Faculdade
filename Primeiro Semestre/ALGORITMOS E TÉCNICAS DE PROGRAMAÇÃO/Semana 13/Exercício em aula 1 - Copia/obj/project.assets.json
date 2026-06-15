@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Workspace\\Faculdade\\Primeiro Semestre\\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\\Semana 13\\Exercício em aula 1\\Exercício1.csproj",
+      "projectUniqueName": "c:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Workspace\\Faculdade\\Primeiro Semestre\\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\\Semana 13\\Exercício em aula 1 - Copia\\Exercício1.csproj",
       "projectName": "Exercício1",
-      "projectPath": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Workspace\\Faculdade\\Primeiro Semestre\\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\\Semana 13\\Exercício em aula 1\\Exercício1.csproj",
+      "projectPath": "c:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Workspace\\Faculdade\\Primeiro Semestre\\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\\Semana 13\\Exercício em aula 1 - Copia\\Exercício1.csproj",
       "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Workspace\\Faculdade\\Primeiro Semestre\\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\\Semana 13\\Exercício em aula 1\\obj\\",
+      "outputPath": "c:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Workspace\\Faculdade\\Primeiro Semestre\\ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO\\Semana 13\\Exercício em aula 1 - Copia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config"
