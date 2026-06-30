@@ -29,6 +29,9 @@
                             <a class="nav-link" href="#parceiros">Parceiros</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#meu-card">Meu card</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#responsavel">Responsável</a>
                         </li>
                     </ul>
@@ -77,9 +80,28 @@
                     <h2>Parceiros Cadastrados</h2>
                 </div>
 
+                <div class="pesquisa-card">
+                    <label for="pesquisa-parceiros">Pesquisar parceiros</label>
+                    <div class="pesquisa-row">
+                        <input type="search" id="pesquisa-parceiros" placeholder="Busque por nome, idioma, interesse, cidade...">
+                        <button class="btn btn-outline-talkhub" type="button" id="limpar-pesquisa">Limpar</button>
+                    </div>
+                </div>
+
                 <div class="filtros-idioma" id="filtros-idioma"></div>
 
                 <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4" id="cards-container"></div>
+            </div>
+        </section>
+
+        <section class="section-block" id="meu-card">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">Área do usuário</p>
+                    <h2>Meu card</h2>
+                </div>
+
+                <div id="meu-card-container"></div>
             </div>
         </section>
 
