@@ -1,0 +1,15 @@
+/home/pedro/Área de trabalho/Workspace/Faculdade/Segundo Semestre/Algoritmos e Estruturas de Dados/Workspace/Atividade de revisão/bin/Debug/net10.0/Atividade de revisão
+/home/pedro/Área de trabalho/Workspace/Faculdade/Segundo Semestre/Algoritmos e Estruturas de Dados/Workspace/Atividade de revisão/bin/Debug/net10.0/Atividade de revisão.deps.json
+/home/pedro/Área de trabalho/Workspace/Faculdade/Segundo Semestre/Algoritmos e Estruturas de Dados/Workspace/Atividade de revisão/bin/Debug/net10.0/Atividade de revisão.runtimeconfig.json
+/home/pedro/Área de trabalho/Workspace/Faculdade/Segundo Semestre/Algoritmos e Estruturas de Dados/Workspace/Atividade de revisão/bin/Debug/net10.0/Atividade de revisão.dll
+/home/pedro/Área de trabalho/Workspace/Faculdade/Segundo Semestre/Algoritmos e Estruturas de Dados/Workspace/Atividade de revisão/bin/Debug/net10.0/Atividade de revisão.pdb
+/home/pedro/Área de trabalho/Workspace/Faculdade/Segundo Semestre/Algoritmos e Estruturas de Dados/Workspace/Atividade de revisão/obj/Debug/net10.0/Atividade de revisão.GeneratedMSBuildEditorConfig.editorconfig
+/home/pedro/Área de trabalho/Workspace/Faculdade/Segundo Semestre/Algoritmos e Estruturas de Dados/Workspace/Atividade de revisão/obj/Debug/net10.0/Atividade de revisão.AssemblyInfoInputs.cache
+/home/pedro/Área de trabalho/Workspace/Faculdade/Segundo Semestre/Algoritmos e Estruturas de Dados/Workspace/Atividade de revisão/obj/Debug/net10.0/Atividade de revisão.AssemblyInfo.cs
+/home/pedro/Área de trabalho/Workspace/Faculdade/Segundo Semestre/Algoritmos e Estruturas de Dados/Workspace/Atividade de revisão/obj/Debug/net10.0/Atividade de revisão.csproj.CoreCompileInputs.cache
+/home/pedro/Área de trabalho/Workspace/Faculdade/Segundo Semestre/Algoritmos e Estruturas de Dados/Workspace/Atividade de revisão/obj/Debug/net10.0/Atividade de revisão.sourcelink.json
+/home/pedro/Área de trabalho/Workspace/Faculdade/Segundo Semestre/Algoritmos e Estruturas de Dados/Workspace/Atividade de revisão/obj/Debug/net10.0/Atividade de revisão.dll
+/home/pedro/Área de trabalho/Workspace/Faculdade/Segundo Semestre/Algoritmos e Estruturas de Dados/Workspace/Atividade de revisão/obj/Debug/net10.0/refint/Atividade de revisão.dll
+/home/pedro/Área de trabalho/Workspace/Faculdade/Segundo Semestre/Algoritmos e Estruturas de Dados/Workspace/Atividade de revisão/obj/Debug/net10.0/Atividade de revisão.pdb
+/home/pedro/Área de trabalho/Workspace/Faculdade/Segundo Semestre/Algoritmos e Estruturas de Dados/Workspace/Atividade de revisão/obj/Debug/net10.0/Atividade de revisão.genruntimeconfig.cache
+/home/pedro/Área de trabalho/Workspace/Faculdade/Segundo Semestre/Algoritmos e Estruturas de Dados/Workspace/Atividade de revisão/obj/Debug/net10.0/ref/Atividade de revisão.dll

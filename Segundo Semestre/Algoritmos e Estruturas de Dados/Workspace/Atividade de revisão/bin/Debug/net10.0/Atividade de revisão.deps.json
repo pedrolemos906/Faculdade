@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Atividade de revisão/1.0.0": {
+        "runtime": {
+          "Atividade de revisão.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Atividade de revisão/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -4,7 +4,6 @@ class Aluno
 {
     private string nome;
     private string cpf;
-    private double nota;
     private Data nascimento;
     private Data cadastro;
 
@@ -36,22 +35,6 @@ class Aluno
         return cpf;
     }
 
-    public bool setNota(double novaNota)
-    {
-        if (novaNota >= 0 && novaNota <= 100)
-        {
-            nota = novaNota;
-            return true;
-        }
-
-        return false;
-    }
-
-    public double getNota()
-    {
-        return nota;
-    }
-
     public Data getNascimento()
     {
         return nascimento;
@@ -80,13 +63,6 @@ class Aluno
         Console.Write("CPF: ");
         cpf = Console.ReadLine();
 
-        do
-        {
-            Console.Write("Nota (0 a 100): ");
-            nota = double.Parse(Console.ReadLine());
-
-        } while (!setNota(nota));
-
         Console.WriteLine("Data de nascimento:");
         nascimento.Ler();
 
@@ -99,7 +75,6 @@ class Aluno
         Console.WriteLine("------------------------");
         Console.WriteLine("Nome: " + nome);
         Console.WriteLine("CPF: " + cpf);
-        Console.WriteLine("Nota: " + nota);
 
         Console.Write("Nascimento: ");
         nascimento.Escrever();

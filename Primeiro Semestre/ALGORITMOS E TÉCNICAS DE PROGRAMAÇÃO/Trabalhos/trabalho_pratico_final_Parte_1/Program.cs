@@ -13,7 +13,6 @@ class Program
 
         do
         {
-            Console.WriteLine("\n===== MENU =====");
             Console.WriteLine("0 - Sair");
             Console.WriteLine("1 - Salvar em Arquivo");
             Console.WriteLine("2 - Recuperar do Arquivo");

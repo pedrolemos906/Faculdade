@@ -1,0 +1,14 @@
+/home/pedro/Documentos/Workspace/aula00/obj/Debug/net10.0/aula00.GeneratedMSBuildEditorConfig.editorconfig
+/home/pedro/Documentos/Workspace/aula00/obj/Debug/net10.0/aula00.AssemblyInfoInputs.cache
+/home/pedro/Documentos/Workspace/aula00/obj/Debug/net10.0/aula00.AssemblyInfo.cs
+/home/pedro/Documentos/Workspace/aula00/obj/Debug/net10.0/aula00.csproj.CoreCompileInputs.cache
+/home/pedro/Documentos/Workspace/aula00/bin/Debug/net10.0/aula00
+/home/pedro/Documentos/Workspace/aula00/bin/Debug/net10.0/aula00.deps.json
+/home/pedro/Documentos/Workspace/aula00/bin/Debug/net10.0/aula00.runtimeconfig.json
+/home/pedro/Documentos/Workspace/aula00/bin/Debug/net10.0/aula00.dll
+/home/pedro/Documentos/Workspace/aula00/bin/Debug/net10.0/aula00.pdb
+/home/pedro/Documentos/Workspace/aula00/obj/Debug/net10.0/aula00.dll
+/home/pedro/Documentos/Workspace/aula00/obj/Debug/net10.0/refint/aula00.dll
+/home/pedro/Documentos/Workspace/aula00/obj/Debug/net10.0/aula00.pdb
+/home/pedro/Documentos/Workspace/aula00/obj/Debug/net10.0/aula00.genruntimeconfig.cache
+/home/pedro/Documentos/Workspace/aula00/obj/Debug/net10.0/ref/aula00.dll
