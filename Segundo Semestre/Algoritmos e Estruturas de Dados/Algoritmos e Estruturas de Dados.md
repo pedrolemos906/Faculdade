@@ -7,16 +7,22 @@
     * balanceamento de arvores 
     * tabelas e dicionarios
 
-**AULA 1 e 2 -04/08/2026**
+**AULA 1 e 2 - 04/08/2026**
     -apresentacao da unidade curricular
 
-**AULA 3 - 06/082026**
+**AULA 3 - 06/08/2026**
     -revisao de ATP
 
-**AULA 4 - 06/082026**
+**AULA 4 e 5 - 06/08/2026**
     -recursividade
         Se um algoritmo recursivo não tiver ação de parada, entrará em loop até acontecer um stack overflow (estouro da memória).
         Uma função recursiva trabalha com o alocamento da memória por pilha, fila, lista.
+
+**AULA 6 - 11/08/2026**
+
+**AULA 7 e 8 - 18/08/2026**
+
+    
         
 
 
