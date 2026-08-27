@@ -1,32 +1,46 @@
 public static class Questao1
 {
-    public static void criarVetor(int[] vetor)
+    public static int[] criarVetor()
     {
-        Console.WriteLine("Questão 1");
-        
-
-        for (int i = 0; i < vetor.Length; i++)
+       return new int[10];
+    }
+    public static void preencherVetor(int[] vetorQuestao1)
+    {
+        for (int i = 0; i < vetorQuestao1.Length; i++)
         {
-            Console.WriteLine($"Informe o {i + 1}º valor do vetor: ");
-            vetor[i] = int.Parse(Console.ReadLine());
+            int num;
+
+            do 
+            {
+                Console.WriteLine($"Digite o {i + 1}º número: ");
+                num = int.Parse(Console.ReadLine());
+
+                if (num <= 0)
+                {
+                    Console.WriteLine("Número inválido, digite um número positivo.");
+                }
+
+            } while (num <= 0);
+
+            vetorQuestao1[i] = num;
         }
         
     }
 
-    public static void deletarSextoElemento(int[] vetor)
+    public static void deletarSextoElemento(int[] vetorQuestao1)
     {
-        for(int i=5; i < vetor.Length - 1; i++)
+        for(int i=5; i < vetorQuestao1.Length - 1; i++)
         {
-            vetor[i] = vetor[i + 1];
+            vetorQuestao1[i] = vetorQuestao1[i + 1];
         }
 
-        vetor[vetor.Length - 1] = -10;
+        vetorQuestao1[vetorQuestao1.Length - 1] = -10;
 
         Console.WriteLine("Valores do vetor: ");
 
-        for (int i = 0; i < vetor.Length; i++)
+        for (int i = 0; i < vetorQuestao1.Length; i++)
         {
-            Console.WriteLine(vetor[i]);
+            Console.WriteLine(vetorQuestao1[i]);
         }
     }
 }

@@ -1,7 +1,8 @@
 public static class Questao4
 {
-    public static void criarMatrizAleatorias(int[,] matrizQuestao4)
+    public static int[,] criarMatrizAleatorias()
     {
+        int[,] matrizQuestao4 = new int[5, 5];
         Random random = new Random();
         for (int i = 0; i < matrizQuestao4.GetLength(0); i++)
         {
@@ -11,55 +12,48 @@ public static class Questao4
             }
         }
 
+        return matrizQuestao4;
+    }
+
+    public static void imprimirMatriz(int[,] matrizQuestao4)
+    {
         for (int i = 0; i < matrizQuestao4.GetLength(0); i++)
         {
             for (int j = 0; j < matrizQuestao4.GetLength(1); j++)
             {
                 Console.Write(matrizQuestao4[i, j] + " ");
             }
-
             Console.WriteLine();
         }
     }
 
-    public static void criarMatriz(int[,] matrizQuestao4)
+
+    public static bool comparadorMatriz(int[,] matriz1Questao4, int[,] matriz2Questao4)
     {
-    
-        for (int i = 0; i < matrizQuestao4.GetLength(0); i++)
+        for (int i = 0; i < matriz1Questao4.GetLength(0); i++)
         {
-            for (int j = 0; j < matrizQuestao4.GetLength(1); j++)
+            for (int j = 0; j < matriz1Questao4.GetLength(1); j++)
             {
-                Console.WriteLine($"Informe o valor da posição [{i}, {j}]: ");
-                matrizQuestao4[i, j] = int.Parse(Console.ReadLine());   
-            }
-        }
-
-        for (int i = 0; i < matrizQuestao4.GetLength(0); i++)
-        {
-            for (int j = 0; j < matrizQuestao4.GetLength(1); j++)
-            {
-                Console.Write(matrizQuestao4[i, j] + " ");
-            }
-
-            Console.WriteLine();
-        }
-    }
-
-    public static void comparadorMatriz(int[,] matrizQuestao4, int[,] matrizQuestao4_2)
-    {
-        bool iguais = true;
-        for (int i = 0; i < matrizQuestao4.GetLength(0); i++)
-        {
-            for (int j = 0; j < matrizQuestao4.GetLength(1); j++)
-            {
-                if (matrizQuestao4[i, j] != matrizQuestao4_2[i, j])
+                if (matriz1Questao4[i, j] != matriz2Questao4[i, j])
                 {
-                    iguais = false;
-                    break;    
+                    return false;
+                        
                 }
             }
-        }      
+        }
+        return true;
     }
 
+    public static void imprimirResultado(bool iguais)
+    {
+        if (iguais)
+        {
+            Console.WriteLine("As matrizes são iguais.");
+        }
+        else
+        {
+            Console.WriteLine("As matrizes são diferentes.");
+        }
+    }
 }
 
