@@ -1,14 +1,5 @@
 # Algoritmos e Estruturas de Dados
 
-> Anotações das aulas — 2º semestre de 2026.
-
-## Navegação
-
-- [Conteúdos da disciplina](#conteúdos-da-disciplina)
-- [Aulas](#aulas)
-- [Avaliações](#avaliações)
-- [Materiais de apoio](#materiais-de-apoio)
-
 ## Conteúdos da disciplina
 
 - Recursividade
@@ -19,15 +10,24 @@
 - Balanceamento de árvores
 - Tabelas e dicionários
 
+## Cronograma
+- [Cronograma](./Conteúdo/Cronograma.pdf)
+
+
 ## Aulas
 
 ### Aula 1 e 2 — 04/08/2026
 
 - Apresentação da unidade curricular.
 
+- [Material da Aula](./Conteúdo/Apresentação da Disciplina.pdf)
+
 ### Aula 3 — 06/08/2026
 
 - Revisão de ATP.
+
+- [Material da Aula](./Conteúdo/Revisão de ATP.pdf)
+- [Material da Aula](./Conteúdo/Revisão de ATP 2.pdf)
 
 ### Aula 4 e 5 — 06/08/2026
 
@@ -35,6 +35,9 @@
 
 - Todo algoritmo recursivo precisa de uma condição de parada. Sem ela, as chamadas se repetem até ocorrer um *stack overflow* (estouro da memória da pilha).
 - Funções recursivas usam a memória de pilha (*stack*) para armazenar suas chamadas.
+
+- [Material da Aula](./Conteúdo/Recursividade.pdf)
+- [Material da Aula](./Conteúdo/Recursividade 2.pdf)
 
 ### Aula 6 — 11/08/2026
 
