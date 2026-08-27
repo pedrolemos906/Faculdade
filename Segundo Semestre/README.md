@@ -1,6 +1,8 @@
-#Sistemas de Informação PUC-Minas
-##Segundo Semestre
-##04/07/2026 à 15/12/2026
+# Sistemas de Informação PUC-Minas
+
+## Segundo Semestre
+
+## 04/07/2026 à 15/12/2026
 
 
 	
