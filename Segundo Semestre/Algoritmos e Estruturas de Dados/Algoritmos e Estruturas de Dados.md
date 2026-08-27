@@ -37,7 +37,7 @@
 - Funções recursivas usam a memória de pilha (*stack*) para armazenar suas chamadas.
 
 - [Material da Aula](./Conteúdo/Recursividade.pdf)
-- [Material da Aula](./Conteúdo/Recursividade 2.pdf)
+- [Material da Aula](./Conteúdo/Recursividade2.pdf)
 
 ### Aula 6 — 11/08/2026
 
