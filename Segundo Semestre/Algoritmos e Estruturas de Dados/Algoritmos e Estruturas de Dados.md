@@ -1,54 +1,70 @@
-**CONTEUDO**
-    * recursividade
-    * introducao a analise de algoritmo
-    * ordenacao e pesquisa em memoria principal
-    * tipos abstratos de dados lineares e flexiveis 
-    * arvores 
-    * balanceamento de arvores 
-    * tabelas e dicionarios
+# Algoritmos e Estruturas de Dados
 
-**AULA 1 e 2 - 04/08/2026**
-    -apresentacao da unidade curricular
+> Anotações das aulas — 2º semestre de 2026.
 
-**AULA 3 - 06/08/2026**
-    -revisao de ATP
+## Navegação
 
-**AULA 4 e 5 - 06/08/2026**
-    -recursividade
-        Se um algoritmo recursivo não tiver ação de parada, entrará em loop até acontecer um stack overflow (estouro da memória).
-        Uma função recursiva trabalha com o alocamento da memória por pilha, fila, lista.
+- [Conteúdos da disciplina](#conteúdos-da-disciplina)
+- [Aulas](#aulas)
+- [Avaliações](#avaliações)
+- [Materiais de apoio](#materiais-de-apoio)
 
-**AULA 6 - 11/08/2026**
+## Conteúdos da disciplina
 
-**AULA 7 e 8 - 18/08/2026**
+- Recursividade
+- Introdução à análise de algoritmos
+- Ordenação e pesquisa em memória principal
+- Tipos abstratos de dados lineares e flexíveis
+- Árvores
+- Balanceamento de árvores
+- Tabelas e dicionários
 
-    
-        
+## Aulas
 
+### Aula 1 e 2 — 04/08/2026
 
+- Apresentação da unidade curricular.
 
+### Aula 3 — 06/08/2026
 
+- Revisão de ATP.
 
-	
-| Semana | Início   | Fim     | Conteúdo Prévio | Prática em Sala / Atividades |
-|--------|----------|---------|-----------------|------------------------------|
-|	 1   | 23/fev   | 01/mar  | — | Apresentação da disciplina; Introdução à Web; VSCode e Chrome; HTML e CSS básicos. <br> **Atividade:** Criar página básica |
-|	 2   | 02/mar   | 08/mar  | Configuração ambiente (1/2) | Evolução da Web; VSCode, Git, GitHub. <br> **Atividades:** Comandos Git, GitLens, criar conta GitHub |
-|	 3   | 09/mar   | 15/mar  | Configuração ambiente (2/2) | GitHub Classroom. <br> **Atividades:** Vincular conta, editar repositório, entrega |
-| 	 4   | 16/mar   | 22/mar  | HTML e CSS | Sintaxe, elementos e Box Model. <br> **Atividade:** Página de CV |
-|	 5   | 23/mar   | 29/mar  | CSS | Semântica HTML, seletores, estilos. <br> **PROJETO:** Definir projeto + homepage completa (48h) |
-|	 —   | 30/mar   | 05/abr  | — | **Semana Santa** |
-|	 6   | 06/abr   | 12/abr  | UX e Responsividade | Wireframes, Figma, Flex/Grid. <br> **PROJETO:** Responsividade |
-|	 7   | 13/abr   | 19/abr  | Bootstrap (1/2) | Instalação e Grid. <br> **Atividade:** Prática |
-|	 8   | 20/abr   | 26/abr  | Bootstrap (2/2) | Componentes. <br> **PROJETO:** Ajuste com Bootstrap |
-|	 9   | 27/abr   | 03/mai  | JavaScript (1/4) | Variáveis, condicionais, loops. <br> **Atividade:** Exercícios |
-|	 10  | 04/mai   | 10/mai  | JavaScript (2/4) | Objetos, arrays, JSON. <br> **Atividade:** Exercícios |
-|	 11  | 11/mai   | 17/mai  | JavaScript (3/4) | Funções, DOM. <br> **Atividade:** Manipulação DOM |
-|	 12  | 18/mai   | 24/mai  | — | **PROJETO:** Dúvidas TP1 + entrega |
-|	 13  | 25/mai   | 31/mai  | JavaScript (4/4) | Storage, formulários, Query String. <br> **PROJETO:** Página dinâmica |
-|	 14  | 01/jun   | 07/jun  | Recursos avançados | Login e preferências. <br> **PROJETO:** Implementação |
-|	 15  | 08/jun   | 14/jun  | HTTP | Métodos, CRUD, APIs. <br> **Atividade:** Exemplos |
-|	 16  | 15/jun   | 21/jun  | — | **PROJETO:** Dúvidas TP2 |
-|	 17  | 22/jun   | 28/jun  | — | **PROJETO:** Revisão por pares |
-|	 18  | 29/jun   | 05/jul  | — | Resultados e notas |
-|	 19  | 06/jul   | 12/jul  | — | Reavaliação |
+### Aula 4 e 5 — 06/08/2026
+
+#### Recursividade
+
+- Todo algoritmo recursivo precisa de uma condição de parada. Sem ela, as chamadas se repetem até ocorrer um *stack overflow* (estouro da memória da pilha).
+- Funções recursivas usam a memória de pilha (*stack*) para armazenar suas chamadas.
+
+### Aula 6 — 11/08/2026
+
+> Anotações pendentes.
+
+### Aula 7 e 8 — 18/08/2026
+
+> Anotações pendentes.
+
+### Aula 9 — 20/08/2026
+
+> Anotações pendentes.
+
+### Aula 10 e 11 — 25/08/2026
+
+> Anotações pendentes.
+
+### Aula 12 — 27/08/2026
+
+> Anotações pendentes.
+
+## Avaliações
+
+| Data | Avaliação | Conteúdo |
+| --- | --- | --- |
+| 17/09 | Prova 1 | Do dia 04/08 até o dia 15/09. |
+| 29/10 | Prova 2 | Do dia 22/09 até o dia 27/10. |
+| 03/12 | Prova 3 | Do dia 03/11 até o dia 01/12. |
+
+## Materiais de apoio
+
+- [Pasta de conteúdos](./Conteúdo/)
+- [Pasta de atividades](./Atividades/)
