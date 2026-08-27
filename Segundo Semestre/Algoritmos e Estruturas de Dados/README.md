@@ -16,20 +16,20 @@
 
 ## Aulas
 
-### Aula 1 e 2 — 04/08/2026
+### Aula 1 — 04/08/2026
 
 - Apresentação da unidade curricular.
 
 - [Material da Aula](./Conteúdo/ApresentaçãoDaDisciplina.pdf)
 
-### Aula 3 — 06/08/2026
+### Aula 2 — 06/08/2026
 
 - Revisão de ATP.
 
 - [Material da Aula](./Conteúdo/RevisãoDeATP.pdf)
 - [Material da Aula](./Conteúdo/RevisãoDeATP2.pdf)
 
-### Aula 4 e 5 — 06/08/2026
+### Aula 3 — 11/08/2026
 
 #### Recursividade
 
@@ -39,25 +39,33 @@
 - [Material da Aula](./Conteúdo/Recursividade.pdf)
 - [Material da Aula](./Conteúdo/Recursividade2.pdf)
 
-### Aula 6 — 11/08/2026
+### Aula 4 — 13/08/2026
 
-> Anotações pendentes.
+- Recursividade (Continuação)
 
-### Aula 7 e 8 — 18/08/2026
+### Aula 5 — 18/08/2026
 
-> Anotações pendentes.
+- Algoritmos de Pesquisa
+- [Material da Aula](./Conteúdo/AlgoritmosDePesquisa.pdf)
 
-### Aula 9 — 20/08/2026
 
-> Anotações pendentes.
+### Aula 6 — 20/08/2026
 
-### Aula 10 e 11 — 25/08/2026
+- Pesquisa Sequencial
+- [Material da Aula](./Conteúdo/AlgoritmosDePesquisa(Sequencial-Binária).pdf)
 
-> Anotações pendentes.
+### Aula 7 — 25/08/2026
 
-### Aula 12 — 27/08/2026
+- Fundamentos de Análise de Algoritmos
+- [Material da Aula](./Conteúdo/FundamentosDeAnáliseDeAlgoritmos.pdf)
+- [Material da Aula](./Conteúdo/FundamentosDeAnáliseDeAlgoritmos2.pdf)
 
-> Anotações pendentes.
+### Aula 8 — 27/08/2026
+
+- Complexidade de Algoritmos
+
+
+
 
 ## Avaliações
 
