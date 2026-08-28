@@ -63,6 +63,8 @@
 ### Aula 8 — 27/08/2026
 
 - Complexidade de Algoritmos
+- Resolução do exercicío do slide "Fundamentos de Análise de Algoritmos"
+    - Encontre o maoir e menor valores em um array de inteiros, em seguida, encontre a função de complexidade de tempo para sua solução.
 
 
 
