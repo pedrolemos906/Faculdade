@@ -52,7 +52,7 @@
                 </div>
                 <div class="col-2">
                     <br/>
-                    <button type="button" class="btn btn-primary" id="btnExe1">Cumprimentar</button>
+                    <button type="button" class="btn btn-primary" id="btn1">Cumprimentar</button>
                 </div>
                 <div class="col-5">
                     <br/>
@@ -84,7 +84,7 @@
                   </div>
                  <div class="col-1">
                     <br/>
-                    <button type="button" id="btnExe2" class="btn btn-primary">Calcular</button>
+                    <button type="button" id="btn2" class="btn btn-primary">Calcular</button>
                   </div>
                 <div class="col-3">
                     <br/>
@@ -122,8 +122,8 @@
             <h5> 4 - Desenvolva um programa que transforme um valor de temperatura fornecido pelo usuário, de Farenheit ( F ) para Graus Celcius  ( ºC ). [C = (F – 32) * 1.8].</h5>
             <div class="row">
                 <div class="col-3">
-                  <label for="temperatura_far" class="form-label">Temperatura Fº:</label> 
-                  <input type="text" id="temperatura_far" class="form-control" placeholder="informe a temperatura em Fº">
+                  <label for="fahrenheit" class="form-label">Temperatura Fº:</label> 
+                  <input type="text" id="fahrenheit" class="form-control" placeholder="informe a temperatura em Fº">
                 </div>
                 <div class="col-1">
                     <br/>
@@ -141,16 +141,16 @@
             <h5> 5 - Um fazendeiro tem como principal atividade a venda de leite. Do valor total ganho de sua produção, 30% vai para custear a produção. Sabendo que ele vende o litro de leite por R$0,50 para seus distribuidores, faça um programa que receba uma quantidade de litros vendidas e informe quanto ele ganhará com a venda.</h5>
             <div class="row">
                 <div class="col-3">
-                  <label for="qtd_litros" class="form-label">Litros de Leite Vendidos:</label> 
-                  <input type="text" class="form-control" placeholder="informe a quantidade de litros">
+                  <label for="litros" class="form-label">Litros de Leite Vendidos:</label> 
+                  <input type="text" id="litros" class="form-control" placeholder="informe a quantidade de litros">
                 </div>
                 <div class="col-1">
                     <br/>
-                    <button type="button" class="btn btn-primary">Calcular</button>
+                    <button type="button" id="btn5" class="btn btn-primary">Calcular</button>
                 </div>
                 <div class="col-5">
                     <br/>
-                    <span> Resultado da Questão 5</span>
+                    <span id="res5"> Resultado da Questão 5</span>
                 </div>
             </div>
         </div>
@@ -161,11 +161,11 @@
             <div class="row">
                 <div class="col-1">
                     <br/>
-                    <button type="button" class="btn btn-primary">Exibir</button>
+                    <button type="button" id="btn6" class="btn btn-primary">Exibir</button>
                 </div>
                 <div class="col-5">
                     <br/>
-                    <span> Resultado da Questão 6</span>
+                    <span id="res6"> Resultado da Questão 6</span>
                 </div>
             </div>
         </div>
@@ -175,50 +175,54 @@
             <h5> 7 - Receba dois valores abaixo informados pelo usuário e informe qual o maior e o menor valor.</h5>
             <div class="row">
                 <div class="col-3">
-                  <label for="distancia_percorrida" class="form-label">Distância Percorrida:</label> 
-                  <input type="text" class="form-control" placeholder="informe a distancia em km">
+                  <label for="distancia_percorrida" class="form-label">Primeiro Valor:</label> 
+                  <input type="text" id="primeiro_valor" class="form-control" placeholder="informe o primeiro valor">
                 </div>
                 <div class="col-3">
-                  <label for="distancia_percorrida" class="form-label">Tempo Gasto:</label> 
-                  <input type="text" class="form-control" placeholder="informe o tempo em horas">
+                  <label for="distancia_percorrida" class="form-label">Segundo Valor:</label> 
+                  <input type="text" id="segundo_valor" class="form-control" placeholder="informe o segundo valor">
                 </div>
                 <div class="col-1">
                     <br/>
-                    <button type="button" class="btn btn-primary">Calcular</button>
+                    <button type="button" id="btn7" class="btn btn-primary">Calcular</button>
                 </div>
                 <div class="col-5">
                     <br/>
-                    <span> Resultado da Questão 7</span>
+                    <span id="res7"> Resultado da Questão 7</span>
                 </div>
             </div>
         </div>
 
         <!-- 8ª Questão  -->
         <div class="row my-4">
-            <h5> 8 - Desenvolva um algoritmo que exiba cinco números aleatórios 0 a 10.</h5>
+            <h5> 8 - Desenvolva um algoritmo que exiba cinco números aleatórios de 0 a 10.</h5>
             <div class="row">
                 <div class="col-1">
                     <br/>
-                    <button type="button" class="btn btn-primary">Exibir</button>
+                    <button type="button" id="btn8" class="btn btn-primary">Exibir</button>
                 </div>
                 <div class="col-5">
                     <br/>
-                    <span> Resultado da Questão 8</span>
+                    <span id="res8"> Resultado da Questão 8</span>
                 </div>
             </div>
         </div>
-
+        
         <!-- 9ª Questão  -->
         <div class="row my-4">
             <h5> 9 - Receba o valor de um raio e calcule a circunferência de um círculo ( C = 2 * pi * raio).</h5>
             <div class="row">
+                <div class="col-3">
+                        <label for="raio" class="form-label">Raio:</label> 
+                        <input type="text" id="raio" class="form-control" placeholder="informe o raio">
+                    </div>
                 <div class="col-1">
                     <br/>
-                    <button type="button" class="btn btn-primary">Exibir</button>
+                    <button type="button" id="btn9" class="btn btn-primary">Calcular</button>
                 </div>
                 <div class="col-5">
                     <br/>
-                    <span> Resultado da Questão 9</span>
+                    <span id="res9"> Resultado da Questão 9</span>
                 </div>
             </div>
         </div>
@@ -229,11 +233,11 @@
             <div class="row">
                 <div class="col-1">
                     <br/>
-                    <button type="button" class="btn btn-primary">Exibir</button>
+                    <button type="button" id="btn10" class="btn btn-primary">Exibir</button>
                 </div>
                 <div class="col-5">
                     <br/>
-                    <span> Resultado da Questão 10</span>
+                    <span id="res10"> Resultado da Questão 10</span>
                 </div>
             </div>
         </div>
