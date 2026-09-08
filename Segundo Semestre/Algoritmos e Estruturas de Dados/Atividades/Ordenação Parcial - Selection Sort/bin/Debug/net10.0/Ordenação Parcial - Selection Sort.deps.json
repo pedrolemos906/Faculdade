@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Ordenação Parcial - Selection Sort/1.0.0": {
+        "runtime": {
+          "Ordenação Parcial - Selection Sort.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Ordenação Parcial - Selection Sort/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
