@@ -67,6 +67,12 @@
     - Encontre o maoir e menor valores em um array de inteiros, em seguida, encontre a função de complexidade de tempo para sua solução.
 
 
+### Aula 9 — 01/09/2026
+
+- Ordenação Parcial
+    - parcial selection
+
+
 
 
 ## Avaliações
