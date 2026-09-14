@@ -5,7 +5,7 @@ public class Questao2
     public long comparacoes = 0;
     public long movimentacoes = 0;
 
-    public void InsertionSortParcial(int[] vetor2, int k)
+    public int[] InsertionSortParcial(int[] vetor2, int k)
     {
 
         for (int i = 1; i < vetor2.Length; i++) 
@@ -28,6 +28,7 @@ public class Questao2
             vetor2[j + 1] = tmp; 
             movimentacoes++;        
         }
+        return vetor2;
     }
 }
 

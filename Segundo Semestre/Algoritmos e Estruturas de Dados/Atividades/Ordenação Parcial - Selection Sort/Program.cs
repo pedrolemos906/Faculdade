@@ -88,6 +88,12 @@ class Program
         Questao1 questao1 = new Questao1();
         questao1.SelectionSortParcial(vetor1, k);
 
+        for (int i = 0; i < k; i++)
+        {
+            Console.Write(vetor1[i] + " ");
+        }
+        Console.WriteLine();
+
         Console.WriteLine($"Comparacoes: {questao1.comparacoes}");
         Console.WriteLine($"Movimentacoes: {questao1.movimentacoes}");
 
@@ -96,6 +102,12 @@ class Program
         Console.WriteLine("Questao 2 - Insertion Sort Parcial");
         Questao2 questao2 = new Questao2();
         questao2.InsertionSortParcial(vetor2, k);
+        
+        for (int i = 0; i < k; i++)
+        {
+            Console.Write(vetor2[i] + " ");
+        }
+        Console.WriteLine();
 
         Console.WriteLine($"Comparacoes: {questao2.comparacoes}");
         Console.WriteLine($"Movimentacoes: {questao2.movimentacoes}");
