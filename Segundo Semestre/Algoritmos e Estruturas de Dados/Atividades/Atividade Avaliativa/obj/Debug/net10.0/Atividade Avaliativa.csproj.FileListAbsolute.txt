@@ -1,0 +1,15 @@
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Segundo Semestre\Algoritmos e Estruturas de Dados\Atividades\Atividade Avaliativa\bin\Debug\net10.0\Atividade Avaliativa.exe
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Segundo Semestre\Algoritmos e Estruturas de Dados\Atividades\Atividade Avaliativa\bin\Debug\net10.0\Atividade Avaliativa.deps.json
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Segundo Semestre\Algoritmos e Estruturas de Dados\Atividades\Atividade Avaliativa\bin\Debug\net10.0\Atividade Avaliativa.runtimeconfig.json
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Segundo Semestre\Algoritmos e Estruturas de Dados\Atividades\Atividade Avaliativa\bin\Debug\net10.0\Atividade Avaliativa.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Segundo Semestre\Algoritmos e Estruturas de Dados\Atividades\Atividade Avaliativa\bin\Debug\net10.0\Atividade Avaliativa.pdb
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Segundo Semestre\Algoritmos e Estruturas de Dados\Atividades\Atividade Avaliativa\obj\Debug\net10.0\Atividade Avaliativa.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Segundo Semestre\Algoritmos e Estruturas de Dados\Atividades\Atividade Avaliativa\obj\Debug\net10.0\Atividade Avaliativa.AssemblyInfoInputs.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Segundo Semestre\Algoritmos e Estruturas de Dados\Atividades\Atividade Avaliativa\obj\Debug\net10.0\Atividade Avaliativa.AssemblyInfo.cs
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Segundo Semestre\Algoritmos e Estruturas de Dados\Atividades\Atividade Avaliativa\obj\Debug\net10.0\Atividade Avaliativa.csproj.CoreCompileInputs.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Segundo Semestre\Algoritmos e Estruturas de Dados\Atividades\Atividade Avaliativa\obj\Debug\net10.0\Atividade Avaliativa.sourcelink.json
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Segundo Semestre\Algoritmos e Estruturas de Dados\Atividades\Atividade Avaliativa\obj\Debug\net10.0\Atividade Avaliativa.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Segundo Semestre\Algoritmos e Estruturas de Dados\Atividades\Atividade Avaliativa\obj\Debug\net10.0\refint\Atividade Avaliativa.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Segundo Semestre\Algoritmos e Estruturas de Dados\Atividades\Atividade Avaliativa\obj\Debug\net10.0\Atividade Avaliativa.pdb
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Segundo Semestre\Algoritmos e Estruturas de Dados\Atividades\Atividade Avaliativa\obj\Debug\net10.0\Atividade Avaliativa.genruntimeconfig.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Workspace\Faculdade\Segundo Semestre\Algoritmos e Estruturas de Dados\Atividades\Atividade Avaliativa\obj\Debug\net10.0\ref\Atividade Avaliativa.dll

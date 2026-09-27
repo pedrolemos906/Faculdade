@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Atividade Eureka")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db821621239c3d116cadafe1617ccc08671c9c3e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c928cb12fbb461d65c717e1eb90768e013e53b7")]
 [assembly: System.Reflection.AssemblyProductAttribute("Atividade Eureka")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Atividade Eureka")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
