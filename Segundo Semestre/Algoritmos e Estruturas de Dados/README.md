@@ -72,6 +72,19 @@
 - Ordenação Parcial
     - parcial selection
 
+### Aula ? — 22/10/2026
+
+- pilhas
+
+### Aula ? — 19/10/2026
+
+- filas
+
+### Aula ? — 22/10/2026
+
+- Tipos Abstratos de Dados Lineares: Lista
+    aulas anteriores: pilhas e filas
+    
 
 
 

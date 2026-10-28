@@ -1,0 +1,14 @@
+/home/pedro/Área de trabalho/Atividade_27-10/bin/Debug/net10.0/Atividade_27-10
+/home/pedro/Área de trabalho/Atividade_27-10/bin/Debug/net10.0/Atividade_27-10.deps.json
+/home/pedro/Área de trabalho/Atividade_27-10/bin/Debug/net10.0/Atividade_27-10.runtimeconfig.json
+/home/pedro/Área de trabalho/Atividade_27-10/bin/Debug/net10.0/Atividade_27-10.dll
+/home/pedro/Área de trabalho/Atividade_27-10/bin/Debug/net10.0/Atividade_27-10.pdb
+/home/pedro/Área de trabalho/Atividade_27-10/obj/Debug/net10.0/Atividade_27-10.GeneratedMSBuildEditorConfig.editorconfig
+/home/pedro/Área de trabalho/Atividade_27-10/obj/Debug/net10.0/Atividade_27-10.AssemblyInfoInputs.cache
+/home/pedro/Área de trabalho/Atividade_27-10/obj/Debug/net10.0/Atividade_27-10.AssemblyInfo.cs
+/home/pedro/Área de trabalho/Atividade_27-10/obj/Debug/net10.0/Atividade_27-10.csproj.CoreCompileInputs.cache
+/home/pedro/Área de trabalho/Atividade_27-10/obj/Debug/net10.0/Atividade_27-10.dll
+/home/pedro/Área de trabalho/Atividade_27-10/obj/Debug/net10.0/refint/Atividade_27-10.dll
+/home/pedro/Área de trabalho/Atividade_27-10/obj/Debug/net10.0/Atividade_27-10.pdb
+/home/pedro/Área de trabalho/Atividade_27-10/obj/Debug/net10.0/Atividade_27-10.genruntimeconfig.cache
+/home/pedro/Área de trabalho/Atividade_27-10/obj/Debug/net10.0/ref/Atividade_27-10.dll
